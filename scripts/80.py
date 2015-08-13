@@ -3,16 +3,14 @@ import shutil
 import requests
 url = 'http://www.ssa.gov/OACT/babynames/state/namesbystate.zip'
 # Downloading will take awhile...
+print("Downloading", url)
 resp = requests.get(url)
 # save to hard drive
-f = open("/tmp/ssastates.zip", "wb")
-f.write(resp.content)
-f.close()
-
+with open("/tmp/ssastates.zip", "wb") as f:
+    f.write(resp.content)
 # unzip
 shutil.unpack_archive("/tmp/ssastates.zip", "/tmp")
-# open up coloardo
-
+# open up the file
 rows = open("/tmp/CO.TXT").readlines()
 totes = 0
 for r in rows:
