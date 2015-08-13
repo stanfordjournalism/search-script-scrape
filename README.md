@@ -150,6 +150,17 @@ To run a script:
 
 I leave it to you and Google to figure out how to run Python 3 on your own system. FWIW, I was using the [Python 3.4.3 provided by the Anaconda 2.2.0 installer for OS X](http://continuum.io/downloads#py34). The most common third-party libraries used are [Requests](http://www.python-requests.org/en/latest/) for downloading the files and [lxml for HTML parsing](http://lxml.de/).
 
+## Expanding on these scripts
+
+To reiterate: each of these scripts are meant to print out single answers, and so they don't actually show the full potential of how programming can automate data collection. As you get better at programming and recognizing its patterns, you'll find out how easy it is to abstract what seemed like a narrow task into something much bigger.
+
+For example, [Script #50](scripts/50.py) prints out the number of times laughter broke out in the _most recently_ transcribed Supreme Court argument. Change two lines and that script will print out the laugh count in _every_ transcribed Supreme Court argument: [demo here](scratchpad/more_scotus_laughs.py)
+
+The same kind of two-to-three-line modification can be done to many of the tasks here; why count just [one year of stop-and-frisks](scripts/24.py) when you can count all of them? And you can also modify the _parameters_; why limit yourself to finding the [highest paid "City Manager" in California](https://github.com/compjour/search-script-scrape/blob/master/scripts/100.py) when you can extend the search to every kind of employee? [demo here](scratchpad/high_city_ca_pay.py)
+
+And of course, in real-world data projects, you aren't typically interested in just printing the answer to your Terminal. You generally want to send them to a spreadsheet or spreadsheet and eventually to a web application (or other kind of publication). That's just a few more lines of programming, too...So while this repo contains a bunch of toy scripts, see if you can think of ways to turn them into bigger data explorations.
+
+
 ## Post-mortem
 
 The original requirement was that students finish all 100 scripts by the end of the quarter. That didn't quite work out so I reduced the requirement to 50. It was a bad idea to make this a "oh, just turn it in at the end of the year", as most people have the tendency to wait for finals week to do such work.

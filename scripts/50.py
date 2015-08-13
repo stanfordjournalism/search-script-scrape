@@ -3,9 +3,9 @@ from lxml import html
 from subprocess import check_output
 from urllib.parse import urljoin
 import requests
-# get the most recent ruling
 url = 'http://www.supremecourt.gov/oral_arguments/argument_transcript.aspx'
 doc = html.fromstring(requests.get(url).text)
+# get the most recent ruling, e.g. the top of table
 href = doc.cssselect('table.datatables tr a')[0].attrib['href']
 # download PDF
 pdf_url = urljoin(url, href)

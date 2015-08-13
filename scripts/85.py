@@ -46,4 +46,4 @@ iphone_row = next(tr for tr in xtr.itersiblings() if 'iPhone' in tr.text_content
 # fourth column has the data, as cols 2 and 3 are padding:
 sales = int(iphone_row.xpath('td[@align="right"][1]/text()')[0].replace(',', ''))
 print(sales * 1000) # units are listed in thousands
-# 47534000    (for June 2015)
+# 47534000 (for June 2015)
