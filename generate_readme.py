@@ -14,14 +14,13 @@ tasks = csv.DictReader(txt.splitlines())
 print(
 """
 | Title  |  Line count |
-|--------|-------------|
-""")
+|--------|-------------|""")
 
 done_count = 0;
 
 for row in sorted(tasks, key = lambda r: int(r['Problem No.'])):
     task = {'num': row['Problem No.'],
-            'title': row['Title'], 'lines': None}
+            'title': row['Title'], 'lines': ""}
     task['path'] = "scripts/%s.py" % task['num']
     if exists(task['path']):
         x = len(open(task['path'], encoding = 'utf-8').readlines())
