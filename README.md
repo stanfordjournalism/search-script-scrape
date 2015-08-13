@@ -2,7 +2,7 @@
 
 This is a repository of [101 Web data-collection tasks](#the-tasks) in Python 3 that I assigned to my [Computational Journalism class in Spring 2015](http://www.compjour.org), to give them regular exercise in programming and research, and to expose them to the variety of data published online.
 
-Each task is meant to be done with a standalone, just-get-the-data-and-print-the-answer script. Some of my favorites:
+Each task is meant to be done with a standalone, just-get-the-data-and-print-the-answer script. Some examples:
 
 - [The California city whose city manager earns the most total wage per capita in 2012](https://github.com/compjour/search-script-scrape/blob/master/scripts/100.py)
 - [In the most recently transcribed Supreme Court argument, the number of times laughter broke out](https://github.com/compjour/search-script-scrape/blob/master/scripts/50.py)
