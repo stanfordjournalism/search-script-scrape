@@ -2,9 +2,6 @@
 
 This is a repository of data-collection tasks, in Python 3, that I assigned to my [Computational Journalism class in Spring 2015](http://www.compjour.org). The goal was to have regular exercise in programming and research, as well as exposing them to the variety of data sources online so that they'd have ideas for their final projects.
 
-- Instructions at [Computational Journalism: Search-Script-Scrape](http://www.compjour.org/search-script-scrape)
-
-- [List of tasks](https://docs.google.com/spreadsheets/d/1JbY_-g9MkGH78Rta0PnE6D8rG8T-wdKGsMa3kAC3bDs/edit?usp=sharing)
 
 ## Repo status
 
@@ -133,3 +130,6 @@ FWIW, I was using the [Python 3.4.3 provided by the Anaconda 2.2.0 installer for
 The original requirement was that students finish all 100 scripts by the end of the quarter. That didn't quite work out so I reduced the requirement to 50. It was a bad idea to make this a "oh, just turn it in at the end of the year", as most people have the tendency to wait for finals week to do such work.
 
 Most of the tasks are pretty straightforward, in terms of the Python programming. The majority of the time is figuring out exactly what the hell I'm referring to, so next time I do this, I'll probably provide the URL of the target page rather than having people attempt to divine the Google Path I used to get to the data.
+
+- Class instructions for [Computational Journalism: Search-Script-Scrape](http://www.compjour.org/search-script-scrape)
+- [List of tasks as a Google Doc](https://docs.google.com/spreadsheets/d/1JbY_-g9MkGH78Rta0PnE6D8rG8T-wdKGsMa3kAC3bDs/edit?usp=sharing)
