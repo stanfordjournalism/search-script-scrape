@@ -10,6 +10,9 @@ Out of 101 tasks, __86__ have a script in this repo; the table below links to th
 Note: A lot of the code is not best practice. The tasks are a little repetitive so I got bored and [ignored PEP8](https://www.python.org/dev/peps/pep-0008/) and/or tried new libraries/conventions for fun.
 
 
+__Note:__ The second column of this table refers to __line count__ of the script, __not__ the answer to the prompt.
+
+
 
 |                                                                                                             Title                                                                                                             | Line count |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
