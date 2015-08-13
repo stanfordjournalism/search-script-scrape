@@ -1,9 +1,8 @@
 ## Search-Script-Scrape
 
-This is a repository of data-collection tasks, in Python 3, that I assigned to my [Computational Journalism class in Spring 2015](http://www.compjour.org). The goal was to have regular exercise in programming and research, as well as exposing them to the variety of data sources online so that they'd have ideas for their final projects.
+This is a repository of [101 Web data-collection tasks](#the-tasks) in Python 3 that I assigned to my [Computational Journalism class in Spring 2015](http://www.compjour.org), to give them regular exercise in programming and research, and to expose them to the variety of data published online.
 
-
-A few of my favorites:
+Each task is meant to be done with a standalone, just-get-the-data-and-print-the-answer script. Some of my favorites:
 
 - [The number of people who visited a U.S. government website using Internet Explorer 6.0 in the last 90 days](https://github.com/compjour/search-script-scrape/blob/master/scripts/3.py)
 - [In the most recently transcribed Supreme Court argument, the number of times laughter broke out](https://github.com/compjour/search-script-scrape/blob/master/scripts/50.py)
@@ -23,7 +22,7 @@ Note: A lot of the code is not best practice. The tasks are a little repetitive 
 
 __Note:__ The second column of this table refers to __line count__ of the script, __not__ the answer to the prompt.
 
-
+## The tasks
 
 |                                                                                                             Title                                                                                                             | Line count |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
