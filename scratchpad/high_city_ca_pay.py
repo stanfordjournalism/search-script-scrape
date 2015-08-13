@@ -1,126 +1,137 @@
 # The top 100 California city employees by per-capita total wages
+# across 2009 to 2013 (the most recent year as of publish date) salary data
 # Modification to scripts/100.py
 import csv
 import requests
 from io import BytesIO
 from zipfile import ZipFile
-YEAR = 2012
+YEARS = range(2009,2014)
 def foosalary(row):
-    tw = float(row['Total Wages']) if row['Total Wages'] else 0
-    return tw / int(row['Entity Population'])
+    return float(row['Total Wages']) / int(row['Entity Population'])
+rows = []
+for year in YEARS:
+    url = 'http://publicpay.ca.gov/Reports/RawExport.aspx?file=%s_City.zip' % year
+    print("Downloading:", url)
+    resp = requests.get(url)
+    with ZipFile(BytesIO(resp.content)) as zfile:
+        fname = zfile.filelist[0].filename # 2012_City.csv
+        print("\tUnzipping:", fname)
+        # first 4 lines are Disclaimer lines
+        # only print line[4] (i.e. the headers) if this is the first iteration
+        xs = 4 if year == YEARS.start else 5
+        rows.extend(zfile.read(fname).decode('latin-1').splitlines()[xs:])
+# This massive array shouldn't cause your (modern) computer to crash...
+print("Filtering %s rows..." % len(rows))
+# remove rows without 'Total Wages'
+employees = [r for r in csv.DictReader(rows) if r['Total Wages']]
+templine = "{year}:\t{city}, {dept}; {position}:\t${money}"
+for e in sorted(employees, key = foosalary, reverse = True)[0:100]: # show top 100
+    line = templine.format(year = e['Year'], city = e['Entity Name'],
+                    dept = e["Department / Subdivision"], position = e['Position'],
+                    money = int(foosalary(e)))
+    print(line)
 
-url = 'http://publicpay.ca.gov/Reports/RawExport.aspx?file=%s_City.zip' % YEAR
-print("Downloading:", url)
-resp = requests.get(url)
-zfile = ZipFile(BytesIO(resp.content))
-fname = zfile.filelist[0].filename # 2012_City.csv
-rows = zfile.read(fname).decode('latin-1').splitlines()
-# first 4 lines are Disclaimer lines
-employees = [r for r in csv.DictReader(rows[4:])]
-for employee in sorted(employees, key = foosalary, reverse = True)[0:100]: # show top 100
-    print("%s in %s: $%s" % (employee['Position'], employee['Entity Name'], int(foosalary(employee))))
-# If you're a fan of True Detective Season 2, the output ring a bell:
+
+# If you're a fan of True Detective Season 2, the output might ring a bell:
 # http://www.latimes.com/local/california/la-me-vernon-true-detective-20150619-story.html
 #
-#
-# Fire Chief in Vernon: $3312
-# Director Of Light & Power in Vernon: $2318
-# Chief Deputy City Attorney in Vernon: $1905
-# Engineering Manager in Vernon: $1783
-# Finance Director in Vernon: $1737
-# Police Chief in Vernon: $1693
-# Captain in Vernon: $1648
-# Director Of Community Services in Vernon: $1630
-# Battalion Chief in Vernon: $1589
-# Director Health & Environmental Control in Vernon: $1583
-# Battalion Chief in Vernon: $1556
-# Battalion Chief in Vernon: $1552
-# Battalion Chief in Vernon: $1527
-# Assistant To The City Administrator in Vernon: $1450
-# Electric Resource Planning & Development Manager in Vernon: $1446
-# Fire Marshall in Vernon: $1445
-# Engineer in Vernon: $1440
-# Engineer in Vernon: $1427
-# Captain in Vernon: $1400
-# Engineer in Vernon: $1393
-# Captain in Vernon: $1373
-# Lieutenant in Vernon: $1356
-# Captain in Vernon: $1333
-# Police Officer in Vernon: $1318
-# Captain in Vernon: $1315
-# Resource Scheduler in Vernon: $1311
-# Captain in Vernon: $1308
-# Captain in Vernon: $1308
-# Lieutenant in Vernon: $1305
-# Captain in Vernon: $1302
-# Lieutenant in Vernon: $1301
-# Captain in Vernon: $1301
-# Captain in Vernon: $1296
-# Engineer in Vernon: $1291
-# Captain in Vernon: $1286
-# Captain in Vernon: $1283
-# Captain in Vernon: $1281
-# Sergeants in Vernon: $1259
-# Captain in Vernon: $1253
-# Captain in Vernon: $1238
-# Lieutenant in Vernon: $1238
-# Captain in Vernon: $1220
-# Sergeants in Vernon: $1200
-# Sergeants in Vernon: $1199
-# Administrative Captain in Vernon: $1186
-# Engineer in Vernon: $1180
-# Sergeants in Vernon: $1177
-# Engineer in Vernon: $1176
-# Captain in Vernon: $1162
-# Sergeants in Vernon: $1157
-# Engineer in Vernon: $1150
-# Sergeants in Vernon: $1139
-# Police Officer in Vernon: $1129
-# Engineer in Vernon: $1104
-# Engineer in Vernon: $1091
-# Engineer in Vernon: $1091
-# Engineer in Vernon: $1074
-# Firefighter in Vernon: $1073
-# Director Of Business Service & Personnel in Vernon: $1068
-# Firefighter in Vernon: $1066
-# Engineer in Vernon: $1059
-# Police Officer in Vernon: $1058
-# Engineer in Vernon: $1051
-# Sergeants in Vernon: $1051
-# Assistant Finance Director in Vernon: $1048
-# Supervising Electrical Engineer in Vernon: $1044
-# Engineer in Vernon: $1044
-# Resource Scheduler in Vernon: $1044
-# Senior Electrical Inspector in Vernon: $1043
-# Gas Systems Lead in Vernon: $1036
-# Engineer in Vernon: $1036
-# Police Officer in Vernon: $1026
-# Operations Supervisor in Vernon: $1023
-# Senior Electronics Technician in Vernon: $1019
-# Police Officer in Vernon: $1014
-# Engineer in Vernon: $1011
-# Police Officer in Vernon: $1010
-# Firefighter in Vernon: $999
-# Police Officer in Vernon: $992
-# Police Officer in Vernon: $991
-# Public Works Superintendent in Vernon: $984
-# Firefighter/Paramedic in Vernon: $984
-# Utilities Compliance Officer in Vernon: $983
-# Firefighter in Vernon: $981
-# Firefighter/Paramedic in Vernon: $978
-# It Manager in Vernon: $977
-# Firefighter in Vernon: $977
-# Firefighter/Paramedic in Vernon: $970
-# Firefighter/Paramedic in Vernon: $969
-# Firefighter in Vernon: $967
-# Engineer in Vernon: $964
-# Engineer in Vernon: $962
-# Operations Manager in Vernon: $957
-# Firefighter in Vernon: $954
-# Police Officer in Vernon: $951
-# Engineer in Vernon: $951
-# Plan Checker in Vernon: $948
-# Electric Dispatcher in Vernon: $947
-# Police Officer in Vernon: $946
-# Police Officer in Vernon: $944
-
+# 2010: Vernon, Finance; Finance Director:  $3572
+# 2009: Vernon, Light & Power Administration; Director of Light & Power:  $3405
+# 2012: Vernon, Fire; Fire Chief: $3312
+# 2009: Vernon, City Attorney; City Attorney: $3115
+# 2009: Vernon, Finance; Finance Director:  $3086
+# 2009: Vernon, Office of Special Counsel; Special Counsel: $2912
+# 2009: Vernon, City Attorney; Assistant City Attorney III: $2688
+# 2010: Vernon, L&P Administration; Director of Light & Power Capital Projects: $2596
+# 2010: Vernon, City Attorney; Assistant City Attorney III: $2455
+# 2010: Vernon, Industrial Development; Assistant Director of Industrial Development: $2330
+# 2011: Vernon, Finance; Finance Director:  $2321
+# 2012: Vernon, Light And Power Administration; Director Of Light & Power:  $2318
+# 2013: Vernon, City Administration; City Administrator:  $2224
+# 2013: Vernon, Light And Power Administration; Director Of Light & Power:  $2218
+# 2009: Vernon, Industrial Development; Assistant Director of Industrial Development: $2189
+# 2009: Vernon, City Attorney; Chief Deputy City Attorney:  $2137
+# 2013: Vernon, City Attorney; City Attorney: $2121
+# 2009: Vernon, Administrative, Engineering & Planning; Director of Community Services: $2078
+# 2013: Vernon, Fire; Fire Chief: $1982
+# 2011: Vernon, City Attorney; Chief Deputy City Attorney:  $1979
+# 2010: Vernon, City Attorney; Chief Deputy City Attorney:  $1969
+# 2013: Vernon, Administrative, Engineering & Planning; Director Of Community Services: $1945
+# 2010: Vernon, Administrative, Engineering & Planning; Director of Community Services: $1930
+# 2009: Vernon, Fire; Fire Chief: $1928
+# 2012: Vernon, City Attorney; Chief Deputy City Attorney:  $1905
+# 2011: Vernon, Administrative, Engineering & Planning; Director Of Community Services & Water: $1903
+# 2009: Vernon, Police; Chief:  $1875
+# 2011: Vernon, Fire; Fire Chief: $1857
+# 2013: Vernon, Light And Power Engineering; Engineering Manager: $1834
+# 2012: Vernon, Light And Power Engineering; Engineering Manager: $1783
+# 2009: Vernon, Health; Health Officer/Director Of Health & Environmental Control:  $1782
+# 2013: Vernon, Fire; Battalion Chief:  $1769
+# 2009: Vernon, Police; Sergeants:  $1758
+# 2010: Vernon, Fire; Fire Chief: $1743
+# 2012: Vernon, Finance; Finance Director:  $1737
+# 2013: Vernon, Police; Police Chief: $1728
+# 2011: Vernon, L&P Engineering; Engineering Manager: $1712
+# 2012: Vernon, Police; Police Chief: $1693
+# 2013: Vernon, Finance; Finance Director:  $1691
+# 2009: Vernon, Fire; Assistant Fire Chief: $1687
+# 2009: Vernon, Fire; Battalion Chief:  $1675
+# 2010: Vernon, Police; Sergeants:  $1661
+# 2012: Vernon, Fire; Captain:  $1648
+# 2011: Vernon, Health; Director Health & Environmental Control:  $1646
+# 2010: Vernon, Health; Director Health & Environmental Control:  $1642
+# 2012: Vernon, Administrative, Engineering & Planning; Director Of Community Services: $1630
+# 2013: Vernon, Health; Director Health & Environmental Control:  $1623
+# 2011: Vernon, Fire; Assistant Fire Chief: $1623
+# 2013: Vernon, Fire; Battalion Chief:  $1620
+# 2011: Vernon, Fire; Battalion Chief:  $1619
+# 2013: Vernon, Human Resources; Director Of Human Resources: $1605
+# 2009: Vernon, Fire; Battalion Chief:  $1592
+# 2011: Vernon, L&P Administration; Director Of Light & Power:  $1589
+# 2012: Vernon, Fire; Battalion Chief:  $1589
+# 2012: Vernon, Health; Director Health & Environmental Control:  $1583
+# 2010: Vernon, Fire; Battalion Chief:  $1577
+# 2013: Vernon, Fire; Battalion Chief:  $1576
+# 2009: Vernon, Police; Captain:  $1576
+# 2010: Vernon, Police; Police Chief: $1559
+# 2012: Vernon, Fire; Battalion Chief:  $1556
+# 2012: Vernon, Fire; Battalion Chief:  $1552
+# 2009: Vernon, Police; Captain:  $1551
+# 2009: Vernon, Resource Planning; Electric Resources Planning And Development Manager: $1548
+# 2009: Vernon, System Dispatch; Transmission & Distribution Manager: $1547
+# 2013: Vernon, Resources Planning; Electric Resource Planning & Development Manager: $1539
+# 2009: Vernon, Fire; Captain:  $1529
+# 2010: Vernon, Fire; Assistant Fire Chief: $1528
+# 2012: Vernon, Fire; Battalion Chief:  $1527
+# 2013: Vernon, City Attorney; Chief Deputy City Attorney:  $1520
+# 2010: Vernon, Police; Interim Police Chief: $1516
+# 2011: Vernon, Fire; Battalion Chief:  $1504
+# 2009: Vernon, Fire; Fire Marshall:  $1499
+# 2009: Vernon, Police; Police Officer: $1498
+# 2009: Vernon, Fire; Battalion Chief:  $1497
+# 2009: Vernon, Fire; Regional Training Captain:  $1494
+# 2009: Vernon, Fire; Captain:  $1492
+# 2009: Vernon, Police; Sergeants:  $1488
+# 2009: Vernon, Light & Power Engineering; Engineering Manager: $1488
+# 2009: Vernon, Fire; Captain:  $1484
+# 2010: Vernon, Fire; Battalion Chief:  $1470
+# 2009: Vernon, Police; Police Officer: $1457
+# 2013: Vernon, Fire; Captain:  $1451
+# 2013: Vernon, Resources Planning; Resource Scheduler: $1450
+# 2012: Vernon, City Administration; Assistant To The City Administrator: $1450
+# 2011: Vernon, Resources Planning; Electric Resources Planning And Development Manager:  $1449
+# 2010: Vernon, System Dispatch; Transmission & Distribution Manager: $1448
+# 2012: Vernon, Resources Planning; Electric Resource Planning & Development Manager: $1446
+# 2012: Vernon, Fire; Fire Marshall:  $1445
+# 2012: Vernon, Fire; Engineer: $1440
+# 2010: Vernon, L&P Engineering; Engineering Manager: $1437
+# 2009: Vernon, Police; Sergeants:  $1437
+# 2013: Vernon, Fire; Captain:  $1435
+# 2013: Vernon, Fire; Captain:  $1434
+# 2010: Vernon, Fire; Battalion Chief:  $1433
+# 2012: Vernon, Fire; Engineer: $1427
+# 2009: Vernon, Fire; Captain:  $1423
+# 2009: Vernon, Fire; Captain:  $1420
+# 2009: Vernon, Fire; Captain:  $1415
+# 2009: Vernon, Fire; Captain:  $1414
+# 2013: Vernon, Fire; Captain:  $1413

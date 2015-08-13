@@ -4,12 +4,12 @@
 
 This repository contains [101 Web data-collection tasks](#the-tasks) in Python 3 that I assigned to my [Computational Journalism class in Spring 2015](http://www.compjour.org) to give them regular exercise in programming and conducting research, and to expose them to the variety of data published online.
 
-The hard part of many of these tasks is researching and finding the actual data source. The programming part just needs to be a self-contained script that only concerns itself with fetching the data and printing the answer in the least painful way possible, standards be damned.
+The hard part of many of these tasks is researching and finding the actual data source. The scripts need only concern itself with fetching the data and printing the answer in the least painful way possible. Since the [Computational Journalism class](http://www.compjour.org) wasn't intended to be an actual programming class, adherence to idioms and best codes practices was not emphasized...(especially since I'm new to Python myself!)
 
 Some examples of the tasks:
 
-- [The California city whose city manager has the highest total wage per capita in 2012](https://github.com/compjour/search-script-scrape/blob/master/scripts/100.py)
-- [In the most recently transcribed Supreme Court argument, the number of times laughter broke out](https://github.com/compjour/search-script-scrape/blob/master/scripts/50.py)
+- [The California city whose city manager has the highest total wage per capita in 2012](https://github.com/compjour/search-script-scrape/blob/master/scripts/100.py) ([expanded version](scratchpad/high_city_ca_pay.py))
+- [In the most recently transcribed Supreme Court argument, the number of times laughter broke out](https://github.com/compjour/search-script-scrape/blob/master/scripts/50.py) ([expanded version](scratchpad/more_scotus_laughs.py))
 - [Number of days until Texas's next scheduled execution](scripts/29.py)
 - [The U.S. congressmember with the most Twitter followers](https://github.com/compjour/search-script-scrape/blob/master/scripts/90.py)
 - [The number of people who visited a U.S. government website using Internet Explorer 6.0 in the last 90 days](https://github.com/compjour/search-script-scrape/blob/master/scripts/3.py)
@@ -154,9 +154,9 @@ I leave it to you and Google to figure out how to run Python 3 on your own syste
 
 To reiterate: each of these scripts are meant to print out single answers, and so they don't actually show the full potential of how programming can automate data collection. As you get better at programming and recognizing its patterns, you'll find out how easy it is to abstract what seemed like a narrow task into something much bigger.
 
-For example, [Script #50](scripts/50.py) prints out the number of times laughter broke out in the _most recently_ transcribed Supreme Court argument. Change two lines and that script will print out the laugh count in _every_ transcribed Supreme Court argument: [demo here](scratchpad/more_scotus_laughs.py)
+For example, [Script #50](scripts/50.py) prints out the number of times laughter broke out in the _most recently_ transcribed Supreme Court argument. Change two lines and that script will print out the laugh count in _every_ transcribed Supreme Court argument: ([demo here](scratchpad/more_scotus_laughs.py))
 
-The same kind of two-to-three-line modification can be done to many of the tasks here; why count just [one year of stop-and-frisks](scripts/24.py) when you can count all of them? And you can also modify the _parameters_; why limit yourself to finding the [highest paid "City Manager" in California](https://github.com/compjour/search-script-scrape/blob/master/scripts/100.py) when you can extend the search to every kind of employee? [demo here](scratchpad/high_city_ca_pay.py)
+The same kind of small code restructuring can be done to many of the tasks here. And you can also modify the _parameters_; why limit yourself to finding the [highest paid "City Manager" in California](https://github.com/compjour/search-script-scrape/blob/master/scripts/100.py) when you can extend the search to every kind of California employee, across every year of salary data? ([demo here](scratchpad/high_city_ca_pay.py))
 
 And of course, in real-world data projects, you aren't typically interested in just printing the answer to your Terminal. You generally want to send them to a spreadsheet or spreadsheet and eventually to a web application (or other kind of publication). That's just a few more lines of programming, too...So while this repo contains a bunch of toy scripts, see if you can think of ways to turn them into bigger data explorations.
 
