@@ -6,7 +6,7 @@ This is a repository of data-collection tasks that I assigned to my [Computation
 
 - [List of tasks](https://docs.google.com/spreadsheets/d/1JbY_-g9MkGH78Rta0PnE6D8rG8T-wdKGsMa3kAC3bDs/edit?usp=sharing)
 
-Each task is meant to be a self-contained script: you run it, and it prints the answer I'm looking for. The [scripts][/scripts] in this repo should "just work"...if you have all the dependencies installed that I had while writing them, and the web URLs they target haven't changed...so, basically, these may not work at all.
+Each task is meant to be a self-contained script: you run it, and it prints the answer I'm looking for. The [scripts](/scripts) in this repo should "just work"...if you have all the dependencies installed that I had while writing them, and the web URLs they target haven't changed...so, basically, these may not work at all.
 
 FWIW, I was using the [Python 3.4.3 provided by the Anaconda 2.2.0 installer for OS X](http://continuum.io/downloads#py34). The most common third-party libraries used are [Requests](http://www.python-requests.org/en/latest/) for downloading the files and [lxml for HTML parsing](http://lxml.de/).
 
