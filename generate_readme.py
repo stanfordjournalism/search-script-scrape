@@ -21,15 +21,16 @@ done_count = 0;
 
 for row in sorted(tasks, key = lambda r: int(r['Problem No.'])):
     task = {'num': row['Problem No.'],
-            'title': row['Title']}
+            'title': row['Title'], 'lines': None}
     task['path'] = "scripts/%s.py" % task['num']
     if exists(task['path']):
-        task['lines'] = len(open(task['path'], encoding = 'utf-8').readlines())
-        done_count += 1
-    else:
-        task['lines'] = "Not in repo."
+        x = len(open(task['path'], encoding = 'utf-8').readlines())
+        if x > 3:
+            task['lines'] = x
+            task['title'] = "[%s](%s)" % (task['title'], task['path'])
+            done_count += 1
 
-    print("| {num}. [{title}]({path})  |  {lines} |".format(**task))
+    print("| {num}. {title} |  {lines} |".format(**task))
 
 
 print("# done: ", done_count)
