@@ -10,15 +10,13 @@ from os.path import exists
 GDOC_URL = 'https://docs.google.com/spreadsheets/d/1JbY_-g9MkGH78Rta0PnE6D8rG8T-wdKGsMa3kAC3bDs/export?format=csv&gid=0'
 
 txt = requests.get(GDOC_URL).text
-tasks = csv.DictReader(txt.splitlines())
-print(
-"""
-| Title  |  Line count |
-|--------|-------------|""")
+rows = csv.DictReader(txt.splitlines())
+
+
 
 done_count = 0;
-
-for row in sorted(tasks, key = lambda r: int(r['Problem No.'])):
+tasks = []
+for row in sorted(rows, key = lambda r: int(r['Problem No.'])):
     task = {'num': row['Problem No.'],
             'title': row['Title'], 'lines': ""}
     task['path'] = "scripts/%s.py" % task['num']
@@ -28,8 +26,21 @@ for row in sorted(tasks, key = lambda r: int(r['Problem No.'])):
             task['lines'] = x
             task['title'] = "[%s](%s)" % (task['title'], task['path'])
             done_count += 1
+    tasks.append(task)
+#############
+# print stuff out
+print("The repo currently contains scripts for __%s__ of __%s__ tasks:" %
+        (done_count, len(tasks)))
+print(
+"""
+|          Title          |  Line count |
+|-------------------------|-------------|""")
 
-    print("| {num}. {title} |  {lines} |".format(**task))
+for task in tasks:
+    print("| {num}. {title} |  {lines} lines |".format(**task))
 
 
-print("# done: ", done_count)
+
+
+
+

@@ -1,5 +1,4 @@
 # Number of days until Texas's next scheduled execution
-
 from datetime import datetime
 from lxml import html
 import requests
