@@ -19,6 +19,7 @@ Most of the tasks are pretty straightforward, in terms of the Python programming
 Out of 101 tasks, __87__ have a script in this repo; the table below links to the available scripts. If there's not a link, it means I haven't committed the code. Some of them I had to rethink a less verbose solution (or the target changed, as the Internet sometimes does), and now this repo has taken a backseat to many other data projects on my list. `¯\_(ツ)_/¯` 
 
 Note: a lot of the code is not best practice, as halfway through I got bored and either [flouted PEP8](https://www.python.org/dev/peps/pep-0008/) or tried new libraries/conventions for fun.
+
 |                                                                                                             Title                                                                                                             | Line count |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
 | 1. [Number of datasets currently listed on data.gov](scripts/1.py)                                                                                                                                                            | 7          |
