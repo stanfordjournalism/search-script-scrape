@@ -12,7 +12,7 @@ Each task is meant to be done with a standalone, just-get-the-data-and-print-the
 
 ## Repo status
 
-Out of 101 tasks, __88__ have a script in this repo.
+Out of 101 tasks, __89__ have a script in this repo.
 
 The table below links to the available scripts. If there's not a link, it means I haven't committed the code. Some of them I had to rethink a less verbose solution (or the target changed, as the Internet sometimes does), and now this repo has taken a backseat to many other data projects on my list. `¯\_(ツ)_/¯` 
 
@@ -65,10 +65,10 @@ __Note:__ The second column of this table refers to __line count__ of the script
 | 38. [The domain of the most visited U.S. government website right now](scripts/38.py)                                                                                                                                         |          5 |
 | 39. [Number of medical device recalls issued by the U.S. Food and Drug Administration in 2013](scripts/39.py)                                                                                                                 |          6 |
 | 40. [Number of FOIA requests made to the Chicago Public Library](scripts/40.py)                                                                                                                                               |          6 |
-| 41. [The number of currently open medical trials involving alchol-related disorders](scripts/41.py)                                                                                                                           |          5 |
+| 41. [The number of currently open medical trials involving alcohol-related disorders](scripts/41.py)                                                                                                                          |          5 |
 | 42. [The name of the Supreme Court justice who delivered the opinion in the most recently announced decision](scripts/42.py)                                                                                                  |         31 |
 | 43. [The number of citations that resulted from FDA inspections in fiscal year 2012](scripts/43.py)                                                                                                                           |         10 |
-| 44. [Number of people visiting a U.S. government website right now](scripts/44.py)                                                                                                                                            |          4 |
+| 44. [Number of people visiting a U.S. government website right now](scripts/44.py)                                                                                                                                            |          6 |
 | 45. [The number of security alerts issued by US-CERT in the current year](scripts/45.py)                                                                                                                                      |          6 |
 | 46. [The number of Pinterest accounts maintained by U.S. State Department embassies and missions](scripts/46.py)                                                                                                              |         13 |
 | 47. [The number of international travel alerts from the U.S. State Department currently in effect](scripts/47.py)                                                                                                             |          7 |
@@ -103,8 +103,8 @@ __Note:__ The second column of this table refers to __line count__ of the script
 | 76. [The total number of publications produced by the U.S. Government Accountability Office](scripts/76.py)                                                                                                                   |          9 |
 | 77. [Number of Dallas officer-involved fatal shooting incidents in 2014](scripts/77.py)                                                                                                                                       |          7 |
 | 78. [Number of Cupertino, CA restaurants that have been shut down due to health violations in the last six months.](scripts/78.py)                                                                                            |          6 |
-| 79. The change in airline revenues from baggage fees                                                                                                                                                                          |            |
-| 80. [The total number of babies named Odin born in Colorado according to the Social Security Administration](scripts/80.py)                                                                                                   |         22 |
+| 79. [The change in total airline revenues from baggage fees, from 2013 to 2014](scripts/79.py)                                                                                                                                |         19 |
+| 80. [The total number of babies named Odin born in Colorado according to the Social Security Administration](scripts/80.py)                                                                                                   |         20 |
 | 81. The latest release date for T-100 Domestic Market (U.S. Carriers) statistics report                                                                                                                                       |            |
 | 82. From 2010 to 2013, the total number of patient deaths listed in the FDA's Adverse Events Reporting System                                                                                                                 |            |
 | 83. [The sum of White House staffermember salaries in 2014](scripts/83.py)                                                                                                                                                    |         22 |
@@ -114,7 +114,7 @@ __Note:__ The second column of this table refers to __line count__ of the script
 | 87. Number of airports with existing construction related activity                                                                                                                                                            |            |
 | 88. [The number of posts on TSA's Instagram account](scripts/88.py)                                                                                                                                                           |         24 |
 | 89. In fiscal year 2013, the short description of the most frequently cited type of FDA's inspectional observations related to food products.                                                                                 |            |
-| 90. [The currently serving U.S. congressmember with the most Twitter followers](scripts/90.py)                                                                                                                                |         77 |
+| 90. [The currently serving U.S. congressmember with the most Twitter followers](scripts/90.py)                                                                                                                                |         76 |
 | 91. [Number of stop-and-frisk reports from the NYPD in 2014](scripts/91.py)                                                                                                                                                   |         22 |
 | 92. [In 2012-Q4, the total amount paid by Rep. Aaron Schock to Lobair LLC, according to Congressional spending records, as compiled by the Sunlight Foundation](scripts/92.py)                                                |         14 |
 | 93. [Number of Github repositories maintained by the GSA's 18F organization, as listed on Github.com](scripts/93.py)                                                                                                          |          5 |
@@ -127,6 +127,7 @@ __Note:__ The second column of this table refers to __line count__ of the script
 | 100. [The California city whose city manager earns the most total wage per population of its city in 2012](scripts/100.py)                                                                                                    |         22 |
 | 101. [The number of women currently serving in the U.S. Congress, according to Sunlight Foundation data](scripts/101.py)                                                                                                      |          8 |
 
+
 -------
 
 
@@ -134,7 +135,16 @@ __Note:__ The second column of this table refers to __line count__ of the script
 
 Each task is meant to be a self-contained script: you run it, and it prints the answer I'm looking for. The [scripts](/scripts) in this repo should "just work"...if you have all the dependencies installed that I had while writing them, and the web URLs they target haven't changed...so, basically, these may not work at all.
 
-FWIW, I was using the [Python 3.4.3 provided by the Anaconda 2.2.0 installer for OS X](http://continuum.io/downloads#py34). The most common third-party libraries used are [Requests](http://www.python-requests.org/en/latest/) for downloading the files and [lxml for HTML parsing](http://lxml.de/).
+To copy the scripts quickly via the command-line; by default, a ./search-script-scrape directory will be created:
+
+    $ git clone https://github.com/compjour/search-script-scrape.git
+
+To run a script:
+
+    $ cd search-script-scrape
+    $ python3 scripts/1.py
+
+I leave it to you and Google to figure out how to run Python 3 on your own system. FWIW, I was using the [Python 3.4.3 provided by the Anaconda 2.2.0 installer for OS X](http://continuum.io/downloads#py34). The most common third-party libraries used are [Requests](http://www.python-requests.org/en/latest/) for downloading the files and [lxml for HTML parsing](http://lxml.de/).
 
 ## Post-mortem
 
