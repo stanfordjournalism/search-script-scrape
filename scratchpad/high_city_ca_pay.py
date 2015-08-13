@@ -1,4 +1,5 @@
-# Modification to scripts/100.py to list top 100 highest-paid-per-capita city employee
+# The top 100 California city employees by per-capita total wages
+# Modification to scripts/100.py
 import csv
 import requests
 from io import BytesIO
@@ -18,7 +19,10 @@ rows = zfile.read(fname).decode('latin-1').splitlines()
 employees = [r for r in csv.DictReader(rows[4:])]
 for employee in sorted(employees, key = foosalary, reverse = True)[0:100]: # show top 100
     print("%s in %s: $%s" % (employee['Position'], employee['Entity Name'], int(foosalary(employee))))
-# Output
+# If you're a fan of True Detective Season 2, the output ring a bell:
+# http://www.latimes.com/local/california/la-me-vernon-true-detective-20150619-story.html
+#
+#
 # Fire Chief in Vernon: $3312
 # Director Of Light & Power in Vernon: $2318
 # Chief Deputy City Attorney in Vernon: $1905

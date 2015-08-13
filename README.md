@@ -4,11 +4,11 @@
 
 This repository contains [101 Web data-collection tasks](#the-tasks) in Python 3 that I assigned to my [Computational Journalism class in Spring 2015](http://www.compjour.org) to give them regular exercise in programming and conducting research, and to expose them to the variety of data published online.
 
-The hard part of many of these tasks is researching and finding the actual data source. Completing the task only requires writing a self-contained, just-get-the-data-and-print-the-answer script. 
+The hard part of many of these tasks is researching and finding the actual data source. The programming part just needs to be a self-contained script that only concerns itself with fetching the data and printing the answer in the least painful way possible, standards be damned.
 
 Some examples of the tasks:
 
-- [The California city whose city manager earns the most total wage per capita in 2012](https://github.com/compjour/search-script-scrape/blob/master/scripts/100.py)
+- [The California city whose city manager has the highest total wage per capita in 2012](https://github.com/compjour/search-script-scrape/blob/master/scripts/100.py)
 - [In the most recently transcribed Supreme Court argument, the number of times laughter broke out](https://github.com/compjour/search-script-scrape/blob/master/scripts/50.py)
 - [Number of days until Texas's next scheduled execution](scripts/29.py)
 - [The U.S. congressmember with the most Twitter followers](https://github.com/compjour/search-script-scrape/blob/master/scripts/90.py)
