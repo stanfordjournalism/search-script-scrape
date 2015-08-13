@@ -20,12 +20,14 @@ for row in sorted(rows, key = lambda r: int(r['Problem No.'])):
     task = {'num': row['Problem No.'],
             'title': row['Title'], 'lines': ""}
     task['path'] = "scripts/%s.py" % task['num']
+    task['link'] = "<a id='task-%s'></a>%s" % (task['num'], task['title'])
     if exists(task['path']):
         lx = len(open(task['path'], encoding = 'utf-8').readlines())
         if lx > 3:
             task['lines'] = "%s lines" % lx
-            task['title'] = "[%s](%s)" % (task['title'], task['path'])
+            task['link'] = "<a id='task-%s' href='%s'>%s</a>" % (task['num'], task['path'], task['title'])
             done_count += 1
+
     tasks.append(task)
 #############
 # print stuff out
@@ -37,7 +39,7 @@ print(
 |-------------------------|-------------|""")
 
 for task in tasks:
-    print("| {num}. {title} |  {lines} |".format(**task))
+    print("| {num}. {link} |  {lines} |".format(**task))
 
 
 
