@@ -21,9 +21,9 @@ for row in sorted(rows, key = lambda r: int(r['Problem No.'])):
             'title': row['Title'], 'lines': ""}
     task['path'] = "scripts/%s.py" % task['num']
     if exists(task['path']):
-        x = len(open(task['path'], encoding = 'utf-8').readlines())
-        if x > 3:
-            task['lines'] = x
+        lx = len(open(task['path'], encoding = 'utf-8').readlines())
+        if lx > 3:
+            task['lines'] = "%s lines" % lx
             task['title'] = "[%s](%s)" % (task['title'], task['path'])
             done_count += 1
     tasks.append(task)
@@ -37,7 +37,7 @@ print(
 |-------------------------|-------------|""")
 
 for task in tasks:
-    print("| {num}. {title} |  {lines} lines |".format(**task))
+    print("| {num}. {title} |  {lines} |".format(**task))
 
 
 
