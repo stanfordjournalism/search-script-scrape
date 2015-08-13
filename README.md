@@ -1,24 +1,16 @@
 ## Search-Script-Scrape
 
-This is a repository of data-collection tasks that I assigned to my [Computational Journalism class in Spring 2015](http://www.compjour.org). The goal was to give them regular exercise in programming and research, as well as exposing them to the variety of data sources online so that they'd have ideas for their final projects.
+This is a repository of data-collection tasks, in Python 3, that I assigned to my [Computational Journalism class in Spring 2015](http://www.compjour.org). The goal was to have regular exercise in programming and research, as well as exposing them to the variety of data sources online so that they'd have ideas for their final projects.
 
 - Instructions at [Computational Journalism: Search-Script-Scrape](http://www.compjour.org/search-script-scrape)
 
 - [List of tasks](https://docs.google.com/spreadsheets/d/1JbY_-g9MkGH78Rta0PnE6D8rG8T-wdKGsMa3kAC3bDs/edit?usp=sharing)
 
-Each task is meant to be a self-contained script: you run it, and it prints the answer I'm looking for. The [scripts](/scripts) in this repo should "just work"...if you have all the dependencies installed that I had while writing them, and the web URLs they target haven't changed...so, basically, these may not work at all.
-
-FWIW, I was using the [Python 3.4.3 provided by the Anaconda 2.2.0 installer for OS X](http://continuum.io/downloads#py34). The most common third-party libraries used are [Requests](http://www.python-requests.org/en/latest/) for downloading the files and [lxml for HTML parsing](http://lxml.de/).
-
-The original requirement was that students finish all 100 scripts by the end of the quarter. That didn't quite work out so I reduced the requirement to 50. It was a bad idea to make this a "oh, just turn it in at the end of the year", as most people have the tendency to wait for finals week to do such work.
-
-Most of the tasks are pretty straightforward, in terms of the Python programming. The majority of the time is figuring out exactly what the hell I'm referring to, so next time I do this, I'll probably provide the URL of the target page rather than having people attempt to divine the Google Path I used to get to the data.
-
 ## Repo status
 
-Out of 101 tasks, __87__ have a script in this repo; the table below links to the available scripts. If there's not a link, it means I haven't committed the code. Some of them I had to rethink a less verbose solution (or the target changed, as the Internet sometimes does), and now this repo has taken a backseat to many other data projects on my list. `¯\_(ツ)_/¯` 
+Out of 101 tasks, __86__ have a script in this repo; the table below links to the available scripts. If there's not a link, it means I haven't committed the code. Some of them I had to rethink a less verbose solution (or the target changed, as the Internet sometimes does), and now this repo has taken a backseat to many other data projects on my list. `¯\_(ツ)_/¯` 
 
-Note: a lot of the code is not best practice, as halfway through I got bored and either [flouted PEP8](https://www.python.org/dev/peps/pep-0008/) or tried new libraries/conventions for fun.
+Note: A lot of the code is not best practice. The tasks are a little repetitive so I got bored and [ignored PEP8](https://www.python.org/dev/peps/pep-0008/) and/or tried new libraries/conventions for fun.
 
 
 
@@ -125,3 +117,19 @@ Note: a lot of the code is not best practice, as halfway through I got bored and
 | 99. [According to the Medill National Security Zone, the number of chambered guns confiscated at airports by the TSA](scripts/99.py)                                                                                          |         11 |
 | 100. The California city whose city manager earns the most total wage per population of its city in 2012                                                                                                                      |            |
 | 101. [The number of women currently serving in the U.S. Congress, according to Sunlight Foundation data](scripts/101.py)                                                                                                      |          8 |
+
+
+-------
+
+
+## How to run this stuff
+
+Each task is meant to be a self-contained script: you run it, and it prints the answer I'm looking for. The [scripts](/scripts) in this repo should "just work"...if you have all the dependencies installed that I had while writing them, and the web URLs they target haven't changed...so, basically, these may not work at all.
+
+FWIW, I was using the [Python 3.4.3 provided by the Anaconda 2.2.0 installer for OS X](http://continuum.io/downloads#py34). The most common third-party libraries used are [Requests](http://www.python-requests.org/en/latest/) for downloading the files and [lxml for HTML parsing](http://lxml.de/).
+
+## Post-mortem
+
+The original requirement was that students finish all 100 scripts by the end of the quarter. That didn't quite work out so I reduced the requirement to 50. It was a bad idea to make this a "oh, just turn it in at the end of the year", as most people have the tendency to wait for finals week to do such work.
+
+Most of the tasks are pretty straightforward, in terms of the Python programming. The majority of the time is figuring out exactly what the hell I'm referring to, so next time I do this, I'll probably provide the URL of the target page rather than having people attempt to divine the Google Path I used to get to the data.
