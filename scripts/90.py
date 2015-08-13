@@ -38,13 +38,11 @@ def get_profiles_from_screen_names(snames):
     api = get_api()
     batch_size = 100
     profiles = []
-
     for i in range(ceil(len(snames) / batch_size)):
         s = i * batch_size
         bnames = snames[s:(s + batch_size)]
         for user in api.lookup_users(screen_names = bnames):
             profiles.append(user._json)
-
     return profiles
 
 
@@ -54,7 +52,7 @@ def get_profiles_from_screen_names(snames):
 # (The number of U.S. congressmembers who have Twitter accounts, according to Sunlight Foundation data)
 # info https://sunlightlabs.github.io/congress/#legislator-spreadsheet
 csvurl = 'http://unitedstates.sunlightfoundation.com/legislators/legislators.csv'
-rows = list(csv.DictReader(requests.get(csvurl).text.splitlines()))
+rows = csv.DictReader(requests.get(csvurl).text.splitlines())
 # note that spreadsheet includes non-sitting legislators, thus the use
 # of 'in_office' attribute to filter
 legislators = [r for r in rows if r['twitter_id'] and r['in_office'] == '1']

@@ -5,7 +5,9 @@ This is a repository of data-collection tasks, in Python 3, that I assigned to m
 
 ## Repo status
 
-Out of 101 tasks, __86__ have a script in this repo; the table below links to the available scripts. If there's not a link, it means I haven't committed the code. Some of them I had to rethink a less verbose solution (or the target changed, as the Internet sometimes does), and now this repo has taken a backseat to many other data projects on my list. `¯\_(ツ)_/¯` 
+Out of 101 tasks, __87__ have a script in this repo.
+
+The table below links to the available scripts. If there's not a link, it means I haven't committed the code. Some of them I had to rethink a less verbose solution (or the target changed, as the Internet sometimes does), and now this repo has taken a backseat to many other data projects on my list. `¯\_(ツ)_/¯` 
 
 Note: A lot of the code is not best practice. The tasks are a little repetitive so I got bored and [ignored PEP8](https://www.python.org/dev/peps/pep-0008/) and/or tried new libraries/conventions for fun.
 
@@ -105,7 +107,7 @@ __Note:__ The second column of this table refers to __line count__ of the script
 | 87. Number of airports with existing construction related activity                                                                                                                                                            |            |
 | 88. [The number of posts on TSA's Instagram account](scripts/88.py)                                                                                                                                                           |         24 |
 | 89. In fiscal year 2013, the short description of the most frequently cited type of FDA's inspectional observations related to food products.                                                                                 |            |
-| 90. [The currently serving U.S. congressmember with the most Twitter followers](scripts/90.py)                                                                                                                                |         79 |
+| 90. [The currently serving U.S. congressmember with the most Twitter followers](scripts/90.py)                                                                                                                                |         77 |
 | 91. [Number of stop-and-frisk reports from the NYPD in 2014](scripts/91.py)                                                                                                                                                   |         22 |
 | 92. The total amount paid by Rep. Aaron Schock to Lobair LLC, according to Congressional spending records in 2012-Q4, as compiled by the Sunlight Foundation                                                                  |            |
 | 93. [Number of Github repositories maintained by the GSA's 18F organization, as listed on Github.com](scripts/93.py)                                                                                                          |          5 |
@@ -115,9 +117,8 @@ __Note:__ The second column of this table refers to __line count__ of the script
 | 97. [The New York school with the highest rate of religious exemptions to vaccinations](scripts/97.py)                                                                                                                        |         10 |
 | 98. [The latest estimated population percent change for Detroit, MI, according to the latest Census QuickFacts summary.](scripts/98.py)                                                                                       |          8 |
 | 99. [According to the Medill National Security Zone, the number of chambered guns confiscated at airports by the TSA](scripts/99.py)                                                                                          |         11 |
-| 100. The California city whose city manager earns the most total wage per population of its city in 2012                                                                                                                      |            |
+| 100. [The California city whose city manager earns the most total wage per population of its city in 2012](scripts/100.py)                                                                                                    |         22 |
 | 101. [The number of women currently serving in the U.S. Congress, according to Sunlight Foundation data](scripts/101.py)                                                                                                      |          8 |
-
 
 -------
 
