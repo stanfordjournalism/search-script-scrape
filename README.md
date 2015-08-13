@@ -3,9 +3,18 @@
 This is a repository of data-collection tasks, in Python 3, that I assigned to my [Computational Journalism class in Spring 2015](http://www.compjour.org). The goal was to have regular exercise in programming and research, as well as exposing them to the variety of data sources online so that they'd have ideas for their final projects.
 
 
+A few of my favorites:
+
+- [The number of people who visited a U.S. government website using Internet Explorer 6.0 in the last 90 days](https://github.com/compjour/search-script-scrape/blob/master/scripts/3.py)
+- [In the most recently transcribed Supreme Court argument, the number of times laughter broke out](https://github.com/compjour/search-script-scrape/blob/master/scripts/50.py)
+- [The California city whose city manager earns the most total wage per population of its city in 2012](https://github.com/compjour/search-script-scrape/blob/master/scripts/100.py)
+- [The currently serving U.S. congressmember with the most Twitter followers](https://github.com/compjour/search-script-scrape/blob/master/scripts/90.py) (this is a little more complicated due to having to go through the process of authenticating an app with Twitter)
+- [Number of stop-and-frisk reports from the NYPD in 2014](https://github.com/compjour/search-script-scrape/blob/master/scripts/91.py)
+
+
 ## Repo status
 
-Out of 101 tasks, __87__ have a script in this repo.
+Out of 101 tasks, __88__ have a script in this repo.
 
 The table below links to the available scripts. If there's not a link, it means I haven't committed the code. Some of them I had to rethink a less verbose solution (or the target changed, as the Internet sometimes does), and now this repo has taken a backseat to many other data projects on my list. `¯\_(ツ)_/¯` 
 
@@ -109,7 +118,7 @@ __Note:__ The second column of this table refers to __line count__ of the script
 | 89. In fiscal year 2013, the short description of the most frequently cited type of FDA's inspectional observations related to food products.                                                                                 |            |
 | 90. [The currently serving U.S. congressmember with the most Twitter followers](scripts/90.py)                                                                                                                                |         77 |
 | 91. [Number of stop-and-frisk reports from the NYPD in 2014](scripts/91.py)                                                                                                                                                   |         22 |
-| 92. The total amount paid by Rep. Aaron Schock to Lobair LLC, according to Congressional spending records in 2012-Q4, as compiled by the Sunlight Foundation                                                                  |            |
+| 92. [In 2012-Q4, the total amount paid by Rep. Aaron Schock to Lobair LLC, according to Congressional spending records, as compiled by the Sunlight Foundation](scripts/92.py)                                                |         14 |
 | 93. [Number of Github repositories maintained by the GSA's 18F organization, as listed on Github.com](scripts/93.py)                                                                                                          |          5 |
 | 94. The New York City high school with the highest average math score in the latest SAT results                                                                                                                               |            |
 | 95. [Since 2002, the most commonly occurring winning number in New York's Lottery Mega Millions](scripts/95.py)                                                                                                               |          9 |
