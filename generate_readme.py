@@ -11,17 +11,25 @@ GDOC_URL = 'https://docs.google.com/spreadsheets/d/1JbY_-g9MkGH78Rta0PnE6D8rG8T-
 
 txt = requests.get(GDOC_URL).text
 tasks = csv.DictReader(txt.splitlines())
-print("""
+print(
+"""
 | Title  |  Line count |
 |--------|-------------|
 """)
+
+done_count = 0;
+
 for row in sorted(tasks, key = lambda r: int(r['Problem No.'])):
     task = {'num': row['Problem No.'],
             'title': row['Title']}
     task['path'] = "scripts/%s.py" % task['num']
     if exists(task['path']):
         task['lines'] = len(open(task['path'], encoding = 'utf-8').readlines())
+        done_count += 1
     else:
         task['lines'] = "Not in repo."
 
     print("| {num}. [{title}]({path})  |  {lines} |".format(**task))
+
+
+print("# done: ", done_count)
