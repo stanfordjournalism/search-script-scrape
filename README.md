@@ -7,7 +7,7 @@ Each task is meant to be done with a standalone, just-get-the-data-and-print-the
 - [The number of people who visited a U.S. government website using Internet Explorer 6.0 in the last 90 days](https://github.com/compjour/search-script-scrape/blob/master/scripts/3.py)
 - [In the most recently transcribed Supreme Court argument, the number of times laughter broke out](https://github.com/compjour/search-script-scrape/blob/master/scripts/50.py)
 - [The California city whose city manager earns the most total wage per population of its city in 2012](https://github.com/compjour/search-script-scrape/blob/master/scripts/100.py)
-- [The currently serving U.S. congressmember with the most Twitter followers](https://github.com/compjour/search-script-scrape/blob/master/scripts/90.py) (this is a little more complicated due to having to go through the process of authenticating an app with Twitter)
+- [The currently serving U.S. congressmember with the most Twitter followers](https://github.com/compjour/search-script-scrape/blob/master/scripts/90.py)
 - [Number of stop-and-frisk reports from the NYPD in 2014](https://github.com/compjour/search-script-scrape/blob/master/scripts/91.py)
 
 
