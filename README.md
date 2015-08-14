@@ -26,8 +26,6 @@ __Note:__ The second column of this table refers to __line count__ of the script
 
 ## The tasks
 
-The repo currently contains scripts for __91__ of __101__ tasks:
-
 |                                                                                                                        Title                                                                                                                         | Line count |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
 | 1. <a id='task-1' href='scripts/1.py'>Number of datasets currently listed on data.gov</a>                                                                                                                                                            | 7 lines    |
@@ -41,7 +39,7 @@ The repo currently contains scripts for __91__ of __101__ tasks:
 | 9. <a id='task-9' href='scripts/9.py'>The number of roll call votes that were rejected by a margin of less than 5 votes, in the first session of the U.S. Senate in the 114th Congress</a>                                                           | 26 lines   |
 | 10. <a id='task-10' href='scripts/10.py'>The title of the highest paid California city government position in 2010</a>                                                                                                                               | 35 lines   |
 | 11. <a id='task-11'></a>How much did the state of California collect in property taxes, according to the U.S. Census 2013 Annual Survey of State Government Tax Collections?                                                                         |            |
-| 12. <a id='task-12'></a>In 2010, the year-over-year change in enplanements at America's busiest airport                                                                                                                                              |            |
+| 12. <a id='task-12' href='scripts/12.py'>In 2010, the year-over-year change in enplanements at America's busiest airport</a>                                                                                                                         | 51 lines   |
 | 13. <a id='task-13' href='scripts/13.py'>The number of armored carrier bank robberies recorded by the FBI in 2014</a>                                                                                                                                | 15 lines   |
 | 14. <a id='task-14' href='scripts/14.py'>The number of workplace fatalities at reported to the federal and state OSHA in the latest fiscal year</a>                                                                                                  | 14 lines   |
 | 15. <a id='task-15' href='scripts/15.py'>Total number of wildlife strike incidents reported at San Francisco International Airport</a>                                                                                                               | 48 lines   |
@@ -58,7 +56,7 @@ The repo currently contains scripts for __91__ of __101__ tasks:
 | 26. <a id='task-26'></a>The dropout rate for all of Santa Clara County high schools, according to the latest cohort data in CALPADS                                                                                                                  |            |
 | 27. <a id='task-27' href='scripts/27.py'>The number of Class I Drug Recalls issued by the U.S. Food and Drug Administration since 2012</a>                                                                                                           | 14 lines   |
 | 28. <a id='task-28' href='scripts/28.py'>Total number of clinical trials as recorded by the National Institutes of Health</a>                                                                                                                        | 7 lines    |
-| 29. <a id='task-29' href='scripts/29.py'>Number of days until Texas's next scheduled execution</a>                                                                                                                                                   | 17 lines   |
+| 29. <a id='task-29' href='scripts/29.py'>Number of days until Texas's next scheduled execution</a>                                                                                                                                                   | 24 lines   |
 | 30. <a id='task-30' href='scripts/30.py'>The total number of inmates executed by Florida since 1976</a>                                                                                                                                              | 7 lines    |
 | 31. <a id='task-31' href='scripts/31.py'>The number of proposed U.S. federal regulations in which comments are due within the next 3 days</a>                                                                                                        | 10 lines   |
 | 32. <a id='task-32' href='scripts/32.py'>Number of Titles that have changed int he United States Code since its last release point</a>                                                                                                               | 6 lines    |
@@ -132,8 +130,7 @@ The repo currently contains scripts for __91__ of __101__ tasks:
 | 100. <a id='task-100' href='scripts/100.py'>The California city whose city manager earns the most total wage per population of its city in 2012</a>                                                                                                  | 23 lines   |
 | 101. <a id='task-101' href='scripts/101.py'>The number of women currently serving in the U.S. Congress, according to Sunlight Foundation data</a>                                                                                                    | 8 lines    |
 
-
------
+----
 
 ## How to run this stuff
 
