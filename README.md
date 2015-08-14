@@ -148,7 +148,7 @@ To run a script:
     $ cd search-script-scrape
     $ python3 scripts/1.py
 
-I leave it to you and Google to figure out how to run Python 3 on your own system. FWIW, I was using the [Python 3.4.3 provided by the Anaconda 2.2.0 installer for OS X](http://continuum.io/downloads#py34). The most common third-party libraries used are [Requests](http://www.python-requests.org/en/latest/) for downloading the files and [lxml for HTML parsing](http://lxml.de/).
+I leave it to you and Google to figure out how to run Python 3 on your own system. FWIW, I was using the [Python 3.4.3 provided by the Anaconda 2.2.0 installer for OS X](http://continuum.io/downloads#py34). The most common third-party libraries used are [Requests](http://www.python-requests.org/en/latest/) for downloading the files and [lxml for HTML parsing](http://lxml.de/). For getting text from PDFs, such as for script #50, you'll need pdftotext, which can be downloaded [here](https://www.bluem.net/en/mac/packages/).
 
 ## Expanding on these scripts
 
