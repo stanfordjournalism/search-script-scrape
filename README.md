@@ -26,6 +26,8 @@ __Note:__ The second column of this table refers to __line count__ of the script
 
 ## The tasks
 
+The repo currently contains scripts for __92__ of __101__ tasks:
+
 |                                                                                                                        Title                                                                                                                         | Line count |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
 | 1. <a id='task-1' href='scripts/1.py'>Number of datasets currently listed on data.gov</a>                                                                                                                                                            | 7 lines    |
