@@ -22,7 +22,7 @@ The table below links to the available scripts. If there's not a link, it means 
 Note: A lot of the code is not best practice. The tasks are a little repetitive so I got bored and [ignored PEP8](https://www.python.org/dev/peps/pep-0008/) and/or tried new libraries/conventions for fun.
 
 
-__Note:__ The second column of this table refers to __line count__ of the script, __not__ the answer to the prompt.
+__Note:__ The "__related URL__" links to either the official source of the data, or at least a page with some background information. The second column of this table refers to __line count__ of the script, __not__ the answer to the prompt.
 
 ## The tasks
 
@@ -131,7 +131,6 @@ The repo currently contains scripts for __92__ of __101__ tasks:
 | 99. <i id='task-99'></i>According to the Medill National Security Zone, the number of chambered guns confiscated at airports by the TSA <br> <a href='https://docs.google.com/spreadsheet/ccc?key=0AhAxyUlnJGbpdGhPSGhwWUp0QkowdEhXRXFKZE5Fb0E&usp=sharing'>[related URL]</a>&nbsp;<a href='scripts/99.py'>[script]</a> |  11 lines |
 | 100. <i id='task-100'></i>The California city whose city manager earns the most total wage per population of its city in 2012 <br> <a href='http://publicpay.ca.gov/Reports/RawExport.aspx'>[related URL]</a>&nbsp;<a href='scripts/100.py'>[script]</a> |  23 lines |
 | 101. <i id='task-101'></i>The number of women currently serving in the U.S. Congress, according to Sunlight Foundation data <br> <a href='https://sunlightlabs.github.io/congress/#legislator-spreadsheet'>[related URL]</a>&nbsp;<a href='scripts/101.py'>[script]</a> |  8 lines |
-[Finished in 1.8s]
 
 
 ----
