@@ -19,7 +19,7 @@ tasks = []
 for row in sorted(rows, key = lambda r: int(r['Problem No.'])):
     task = {'num': row['Problem No.'], 'url': row['Related URL'],
             'title': row['Title'], 'lines': ""}
-    task['link'] = "<i id='task-{num}'></i>{title} <a href='{url}'>[Related URL]</a>".format(
+    task['link'] = "<i id='task-{num}'></i>{title} <br> <a href='{url}'>[related URL]</a>".format(
             num=task['num'], title=task['title'], url=task['url']
         )
     task['path'] = "scripts/%s.py" % task['num']
