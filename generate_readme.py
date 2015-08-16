@@ -17,15 +17,17 @@ rows = csv.DictReader(txt.splitlines())
 done_count = 0;
 tasks = []
 for row in sorted(rows, key = lambda r: int(r['Problem No.'])):
-    task = {'num': row['Problem No.'],
+    task = {'num': row['Problem No.'], 'url': row['Related URL'],
             'title': row['Title'], 'lines': ""}
+    task['link'] = "<i id='task-{num}'></i>{title} <a href='{url}'>[Related URL]</a>".format(
+            num=task['num'], title=task['title'], url=task['url']
+        )
     task['path'] = "scripts/%s.py" % task['num']
-    task['link'] = "<a id='task-%s'></a>%s" % (task['num'], task['title'])
     if exists(task['path']):
         lx = len(open(task['path'], encoding = 'utf-8').readlines())
         if lx > 3:
             task['lines'] = "%s lines" % lx
-            task['link'] = "<a id='task-%s' href='%s'>%s</a>" % (task['num'], task['path'], task['title'])
+            task['link'] += "&nbsp;<a href='%s'>[script]</a>" % (task['path'])
             done_count += 1
 
     tasks.append(task)
