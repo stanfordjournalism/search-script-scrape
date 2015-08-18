@@ -2,8 +2,14 @@
 
 # Notes:
 # As this is one of the last exercises that I've written out, it includes code
-#  that is both lazy and unnecessarily elaborate. You can check out other
-#  scraping/spreadsheet parsing examples to find cleaner ways of doing this.
+#    that is both lazy and convoluted. For example, this is the first time
+#    I've tried openpyxl as opposed to xlrd for reading Excel files
+#    and it shows: http://openpyxl.readthedocs.org/en/latest/index.html
+#
+# You can check out other scraping/spreadsheet parsing examples
+#  in the repo to find cleaner ways of doing this kind of task.
+#
+#
 #
 # Landing page:
 # http://schools.nyc.gov/Accountability/data/TestResults/default.htm
@@ -20,8 +26,10 @@
 #
 # It's just as likely that by next year, they'll redesign or restructure
 #  the site. So this scraping code is unstable. But it works as of August 2015.
+import csv
 import requests
 from io import BytesIO
+from operator import itemgetter
 from urllib.parse import urljoin
 from lxml import html
 from openpyxl import load_workbook
@@ -43,3 +51,39 @@ wb = load_workbook(xlsx)
 # Let's write an agnostic function as if we didn't know how each year's
 #   spreadsheet was actually structured
 sheet = next(s for s in wb.worksheets if "results" in s.title.lower())
+# I don't understand openpyxl's API so I'm just going to
+#   practice nested list comprehensions
+# Note that the first column is just an ID field which we don't care about
+rows = [[cell.value for cell in row[1:]] for row in sheet.iter_rows()]
+headers = rows[0]
+# make it into a list of dicts
+data = [dict(zip(headers, r)) for r in rows[1:]]
+# I think we can assume that the header will change every year/file
+# so let's write another agnostic iterating function to do a best guess
+mathheader = next(h for h in headers if 'math' in h.lower())
+# Not every school has a number for this column
+mathschools = [d for d in data if isinstance(d[mathheader], int)]
+topschool = max(mathschools, key = itemgetter(mathheader))
+# since we've done so much work to get here, so
+#   let's calculate the average of the averages -- which requires a
+#    weighting of math score averages against number of SAT taker
+#    and include that in the printed answer
+
+# find the header that says '# of SAT Takers in 20XX':
+numheader = next(h for h in headers if 'takers' in h.lower())
+total_takers = sum(s[numheader] for s in mathschools)
+mathsums = sum(s[mathheader] * s[numheader] for s in mathschools)
+mathavg = mathsums // total_takers
+tmp_answer = """{name} had the highest average SAT math score: {top_score}
+    This was {diff_score} points higher than the city average of {avg_score}
+"""
+answer = tmp_answer.format(name = topschool['High School'],
+    top_score = topschool[mathheader],
+    diff_score = topschool[mathheader] - mathavg,
+    avg_score = mathavg
+)
+
+print(answer)
+# Output for 2014:
+# STUYVESANT HIGH SCHOOL had the highest average SAT math score: 737
+#    This was 272 points higher than the city average of 465
