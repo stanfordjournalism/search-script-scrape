@@ -26,7 +26,8 @@ __Note:__ The "__related URL__" links to either the official source of the data,
 
 ## The tasks
 
-The repo currently contains scripts for __94__ of __101__ tasks:
+
+The repo currently contains scripts for __95__ of __101__ tasks:
 
 |          Title          |  Line count |
 |-------------------------|-------------|
@@ -60,7 +61,7 @@ The repo currently contains scripts for __94__ of __101__ tasks:
 | 28. <i id='task-28'></i>Total number of clinical trials as recorded by the National Institutes of Health <br> <a href='https://clinicaltrials.gov/'>[related URL]</a>&nbsp;<a href='scripts/28.py'>[script]</a> |  7 lines |
 | 29. <i id='task-29'></i>Number of days until Texas's next scheduled execution <br> <a href='https://www.tdcj.state.tx.us/death_row/dr_scheduled_executions.html'>[related URL]</a>&nbsp;<a href='scripts/29.py'>[script]</a> |  24 lines |
 | 30. <i id='task-30'></i>The total number of inmates executed by Florida since 1976 <br> <a href='http://www.dc.state.fl.us/oth/deathrow/execlist.html'>[related URL]</a>&nbsp;<a href='scripts/30.py'>[script]</a> |  10 lines |
-| 31. <i id='task-31'></i>The number of proposed U.S. federal regulations in which comments are due within the next 3 days <br> <a href='http://regulationsgov.github.io/developers/console/'>[related URL]</a> |   |
+| 31. <i id='task-31'></i>The number of proposed U.S. federal regulations in which comments are due within the next 3 days <br> <a href='http://regulationsgov.github.io/developers/console/'>[related URL]</a>&nbsp;<a href='scripts/31.py'>[script]</a> |  29 lines |
 | 32. <i id='task-32'></i>Number of Titles that have changed int he United States Code since its last release point <br> <a href='http://uscode.house.gov/download/download.shtml'>[related URL]</a>&nbsp;<a href='scripts/32.py'>[script]</a> |  6 lines |
 | 33. <i id='task-33'></i>The number of FDA-approved, but now discontinued drug products that contain Fentanyl as an active ingredient <br> <a href='http://www.accessdata.fda.gov/scripts/cder/ob/docs/tempai.cfm'>[related URL]</a>&nbsp;<a href='scripts/33.py'>[script]</a> |  14 lines |
 | 34. <i id='task-34'></i>In the latest FDA Weekly Enforcement Report, the number of Class I and Class II recalls involving food <br> <a href='http://www.fda.gov/Safety/Recalls/EnforcementReports/default.htm'>[related URL]</a>&nbsp;<a href='scripts/34.py'>[script]</a> |  10 lines |
@@ -96,7 +97,7 @@ The repo currently contains scripts for __94__ of __101__ tasks:
 | 64. <i id='task-64'></i>from March 1 to 7, 2015, the number of times in which designated FDA policy makers met with persons outside the U.S. federal executive branch <br> <a href='http://www.fda.gov/NewsEvents/MeetingsConferencesWorkshops/PastMeetingsWithFDAOfficials/ucm439318.htm'>[related URL]</a>&nbsp;<a href='scripts/64.py'>[script]</a> |  5 lines |
 | 65. <i id='task-65'></i>The number of failed votes in the roll calls 1 through 99, in the U.S. House of the 114th Congress <br> <a href='http://clerk.house.gov/evs/2015/ROLL_000.asp'>[related URL]</a>&nbsp;<a href='scripts/65.py'>[script]</a> |  12 lines |
 | 66. <i id='task-66'></i>The highest minimum wage as mandated by state law. <br> <a href='http://www.dol.gov/whd/minwage/america.htm'>[related URL]</a>&nbsp;<a href='scripts/66.py'>[script]</a> |  28 lines |
-| 67. <i id='task-67'></i>According to the TSA.gov's customer satisfication survey, what is the number of customers in October 2014 who rated their overall experience with tsa.gov as "Excellent"? <br> <a href='http://www.tsa.gov/metrics'>[related URL]</a> |   |
+| 67. <i id='task-67'></i>For the most recently posted TSA.gov customer satisfication survey, post the percentage of respondents who rated their "overall experience today" as "Excellent" <br> <a href='http://www.tsa.gov/web-metrics'>[related URL]</a> |   |
 | 68. <i id='task-68'></i>Number of FDA-approved prescription drugs with GlaxoSmithKline as the applicant holder <br> <a href='http://www.accessdata.fda.gov/scripts/cder/ob/docs/queryah.cfm'>[related URL]</a>&nbsp;<a href='scripts/68.py'>[script]</a> |  11 lines |
 | 69. <i id='task-69'></i>The average number of comments on the last 50 posts on NASA's official Instagram account <br> <a href='https://instagram.com/nasa'>[related URL]</a>&nbsp;<a href='scripts/69.py'>[script]</a> |  40 lines |
 | 70. <i id='task-70'></i>The highest salary possible for a White House staffmember in 2014 <br> <a href='https://open.whitehouse.gov/Government/2014-Report-to-Congress-on-White-House-Staff/i9g8-9web'>[related URL]</a>&nbsp;<a href='scripts/70.py'>[script]</a> |  10 lines |
@@ -131,6 +132,7 @@ The repo currently contains scripts for __94__ of __101__ tasks:
 | 99. <i id='task-99'></i>According to the Medill National Security Zone, the number of chambered guns confiscated at airports by the TSA <br> <a href='https://docs.google.com/spreadsheet/ccc?key=0AhAxyUlnJGbpdGhPSGhwWUp0QkowdEhXRXFKZE5Fb0E&usp=sharing'>[related URL]</a>&nbsp;<a href='scripts/99.py'>[script]</a> |  11 lines |
 | 100. <i id='task-100'></i>The California city whose city manager earns the most total wage per population of its city in 2012 <br> <a href='http://publicpay.ca.gov/Reports/RawExport.aspx'>[related URL]</a>&nbsp;<a href='scripts/100.py'>[script]</a> |  23 lines |
 | 101. <i id='task-101'></i>The number of women currently serving in the U.S. Congress, according to Sunlight Foundation data <br> <a href='https://sunlightlabs.github.io/congress/#legislator-spreadsheet'>[related URL]</a>&nbsp;<a href='scripts/101.py'>[script]</a> |  8 lines |
+
 
 ----
 
