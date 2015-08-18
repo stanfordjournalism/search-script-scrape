@@ -26,7 +26,7 @@ __Note:__ The "__related URL__" links to either the official source of the data,
 
 ## The tasks
 
-The repo currently contains scripts for __93__ of __101__ tasks:
+The repo currently contains scripts for __92__ of __101__ tasks:
 
 |          Title          |  Line count |
 |-------------------------|-------------|
@@ -59,8 +59,8 @@ The repo currently contains scripts for __93__ of __101__ tasks:
 | 27. <i id='task-27'></i>The number of Class I Drug Recalls issued by the U.S. Food and Drug Administration since 2012 <br> <a href='http://www.fda.gov/Drugs/DrugSafety/DrugRecalls/default.htm'>[related URL]</a>&nbsp;<a href='scripts/27.py'>[script]</a> |  14 lines |
 | 28. <i id='task-28'></i>Total number of clinical trials as recorded by the National Institutes of Health <br> <a href='https://clinicaltrials.gov/'>[related URL]</a>&nbsp;<a href='scripts/28.py'>[script]</a> |  7 lines |
 | 29. <i id='task-29'></i>Number of days until Texas's next scheduled execution <br> <a href='https://www.tdcj.state.tx.us/death_row/dr_scheduled_executions.html'>[related URL]</a>&nbsp;<a href='scripts/29.py'>[script]</a> |  24 lines |
-| 30. <i id='task-30'></i>The total number of inmates executed by Florida since 1976 <br> <a href='http://www.dc.state.fl.us/oth/deathrow/execlist.html'>[related URL]</a>&nbsp;<a href='scripts/30.py'>[script]</a> |  7 lines |
-| 31. <i id='task-31'></i>The number of proposed U.S. federal regulations in which comments are due within the next 3 days <br> <a href='http://www.regulations.gov/#!searchResults;rpp=25;po=0;cs=3;dct=N%252BFR%252BPR'>[related URL]</a>&nbsp;<a href='scripts/31.py'>[script]</a> |  10 lines |
+| 30. <i id='task-30'></i>The total number of inmates executed by Florida since 1976 <br> <a href='http://www.dc.state.fl.us/oth/deathrow/execlist.html'>[related URL]</a>&nbsp;<a href='scripts/30.py'>[script]</a> |  10 lines |
+| 31. <i id='task-31'></i>The number of proposed U.S. federal regulations in which comments are due within the next 3 days [note: requires the API] <br> <a href='http://www.regulations.gov/#!searchResults;rpp=25;po=0;cs=3;dct=N%252BFR%252BPR'>[related URL]</a> |   |
 | 32. <i id='task-32'></i>Number of Titles that have changed int he United States Code since its last release point <br> <a href='http://uscode.house.gov/download/download.shtml'>[related URL]</a>&nbsp;<a href='scripts/32.py'>[script]</a> |  6 lines |
 | 33. <i id='task-33'></i>The number of FDA-approved, but now discontinued drug products that contain Fentanyl as an active ingredient <br> <a href='http://www.accessdata.fda.gov/scripts/cder/ob/docs/tempai.cfm'>[related URL]</a>&nbsp;<a href='scripts/33.py'>[script]</a> |  14 lines |
 | 34. <i id='task-34'></i>In the latest FDA Weekly Enforcement Report, the number of Class I and Class II recalls involving food <br> <a href='http://www.fda.gov/Safety/Recalls/EnforcementReports/default.htm'>[related URL]</a>&nbsp;<a href='scripts/34.py'>[script]</a> |  10 lines |
@@ -86,7 +86,7 @@ The repo currently contains scripts for __93__ of __101__ tasks:
 | 54. <i id='task-54'></i>The number of people on FBI's Most Wanted List for white collar crimes <br> <a href='http://www.fbi.gov/wanted/wcc/@@wanted-group-listing'>[related URL]</a>&nbsp;<a href='scripts/54.py'>[script]</a> |  6 lines |
 | 55. <i id='task-55'></i>The number of Government Accountability Office reports and testimonies on the topic of veterans <br> <a href='http://www.gao.gov/browse/topic/Veterans'>[related URL]</a>&nbsp;<a href='scripts/55.py'>[script]</a> |  10 lines |
 | 56. <i id='task-56'></i>Number of times Rep. Darrell Issa's remarks have made it onto the Congressional Record <br> <a href='https://www.congress.gov/search?q=%7B%22source%22%3A%22congrecord%22%2C%22crHouseMemberRemarks%22%3A%22Issa%2C+Darrell+E.+%5BR-CA%5D%22%7D'>[related URL]</a>&nbsp;<a href='scripts/56.py'>[script]</a> |  9 lines |
-| 57. <i id='task-57'></i>The number of comments posted to the regulation that is currently at the top of Regulations.gov's "What's Trending" list <br> <a href='http://www.regulations.gov/#!home'>[related URL]</a> |   |
+| 57. <i id='task-57'></i>The number of comments posted to the regulation that is currently at the top of Regulations.gov's "What's Trending" list [note: this exercise is horrible and will be replaced in next repo push; don't even try it] <br> <a href='http://www.regulations.gov/#!home'>[related URL]</a> |   |
 | 58. <i id='task-58'></i>The number of published research papers from the NSA <br> <a href='https://www.nsa.gov/research/publications/index.shtml'>[related URL]</a>&nbsp;<a href='scripts/58.py'>[script]</a> |  6 lines |
 | 59. <i id='task-59'></i>The number of university-related datasets currently listed at data.gov <br> <a href='http://catalog.data.gov/dataset?organization_type=University&sort=metadata_created+desc&q='>[related URL]</a>&nbsp;<a href='scripts/59.py'>[script]</a> |  7 lines |
 | 60. <i id='task-60'></i>Number of chapters in Title 20 (Education) of the United States Code <br> <a href='http://uscode.house.gov/browse/prelim@title20/chapter9&edition=prelim'>[related URL]</a>&nbsp;<a href='scripts/60.py'>[script]</a> |  15 lines |
@@ -123,7 +123,7 @@ The repo currently contains scripts for __93__ of __101__ tasks:
 | 91. <i id='task-91'></i>Number of stop-and-frisk reports from the NYPD in 2014 <br> <a href='http://www.nyc.gov/html/nypd/html/analysis_and_planning/stop_question_and_frisk_report.shtml'>[related URL]</a>&nbsp;<a href='scripts/91.py'>[script]</a> |  22 lines |
 | 92. <i id='task-92'></i>In 2012-Q4, the total amount paid by Rep. Aaron Schock to Lobair LLC, according to Congressional spending records, as compiled by the Sunlight Foundation <br> <a href='https://sunlightfoundation.com/tools/expenditures/'>[related URL]</a>&nbsp;<a href='scripts/92.py'>[script]</a> |  14 lines |
 | 93. <i id='task-93'></i>Number of Github repositories maintained by the GSA's 18F organization, as listed on Github.com <br> <a href='https://api.github.com/orgs/18F'>[related URL]</a>&nbsp;<a href='scripts/93.py'>[script]</a> |  5 lines |
-| 94. <i id='task-94'></i>The New York City high school with the highest average math score in the latest SAT results <br> <a href='http://schools.nyc.gov/Accountability/data/TestResults/default.htm'>[related URL]</a>&nbsp;<a href='scripts/94.py'>[script]</a> |  89 lines |
+| 94. <i id='task-94'></i>The New York City high school with the highest average math score in the latest SAT results <br> <a href='http://schools.nyc.gov/Accountability/data/TestResults/default.htm'>[related URL]</a>&nbsp;<a href='scripts/94.py'>[script]</a> |  96 lines |
 | 95. <i id='task-95'></i>Since 2002, the most commonly occurring winning number in New York's Lottery Mega Millions <br> <a href='https://data.ny.gov/Government-Finance/Lottery-Mega-Millions-Winning-Numbers-Beginning-20/5xaw-6ayf'>[related URL]</a>&nbsp;<a href='scripts/95.py'>[script]</a> |  9 lines |
 | 96. <i id='task-96'></i>The number of scheduled arguments according to the most recent U.S. Supreme Court argument calendar <br> <a href='http://www.supremecourt.gov/oral_arguments/argument_calendars.aspx'>[related URL]</a>&nbsp;<a href='scripts/96.py'>[script]</a> |  11 lines |
 | 97. <i id='task-97'></i>The New York school with the highest rate of religious exemptions to vaccinations <br> <a href='https://health.data.ny.gov/Health/School-Immunization-Survey-Beginning-2012-13-Schoo/5pme-xbs5'>[related URL]</a>&nbsp;<a href='scripts/97.py'>[script]</a> |  10 lines |
