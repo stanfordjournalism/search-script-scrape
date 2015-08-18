@@ -26,7 +26,7 @@ __Note:__ The "__related URL__" links to either the official source of the data,
 
 ## The tasks
 
-The repo currently contains scripts for __92__ of __101__ tasks:
+The repo currently contains scripts for __93__ of __101__ tasks:
 
 |          Title          |  Line count |
 |-------------------------|-------------|
