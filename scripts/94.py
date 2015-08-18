@@ -42,10 +42,17 @@ urls = [a.attrib.get('href') for a in doc.cssselect('a')]
 #  this is why we use xpath...
 _xurl = next(url for url in urls if url and 'SAT' in url and 'xls' in url) # blargh
 xlsx_url = urljoin(LANDING_PAGE_URL, _xurl)
+print("Downloading", xlsx_url)
 # download the spreadsheet...instead of writing to disk
 # let's just keep it in memory and pass it directly to load_workbook()
 xlsx = BytesIO(requests.get(xlsx_url).content)
 wb = load_workbook(xlsx)
+# The above command will print out a warning:
+#     /site-packages/openpyxl/workbook/names/named_range.py:121: UserWarning:
+#              Discarded range with reserved name
+#              warnings.warn("Discarded range with reserved name")
+
+### Dealing with the worksheet structure
 # The 2014 edition contains two worksheets, the first being "Notes"
 #  and the second being "2014 SAT Results"
 # Let's write an agnostic function as if we didn't know how each year's
