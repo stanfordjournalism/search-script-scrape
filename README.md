@@ -25,7 +25,8 @@ Note: A lot of the code is not best practice. The tasks are a little repetitive 
 __Note:__ The "__related URL__" links to either the official source of the data, or at least a page with some background information. The second column of this table refers to __line count__ of the script, __not__ the answer to the prompt.
 
 ## The tasks
-The repo currently contains scripts for __93__ of __101__ tasks:
+
+The repo currently contains scripts for __94__ of __101__ tasks:
 
 |          Title          |  Line count |
 |-------------------------|-------------|
@@ -85,7 +86,7 @@ The repo currently contains scripts for __93__ of __101__ tasks:
 | 54. <i id='task-54'></i>The number of people on FBI's Most Wanted List for white collar crimes <br> <a href='http://www.fbi.gov/wanted/wcc/@@wanted-group-listing'>[related URL]</a>&nbsp;<a href='scripts/54.py'>[script]</a> |  6 lines |
 | 55. <i id='task-55'></i>The number of Government Accountability Office reports and testimonies on the topic of veterans <br> <a href='http://www.gao.gov/browse/topic/Veterans'>[related URL]</a>&nbsp;<a href='scripts/55.py'>[script]</a> |  10 lines |
 | 56. <i id='task-56'></i>Number of times Rep. Darrell Issa's remarks have made it onto the Congressional Record <br> <a href='https://www.congress.gov/search?q=%7B%22source%22%3A%22congrecord%22%2C%22crHouseMemberRemarks%22%3A%22Issa%2C+Darrell+E.+%5BR-CA%5D%22%7D'>[related URL]</a>&nbsp;<a href='scripts/56.py'>[script]</a> |  9 lines |
-| 57. <i id='task-57'></i>The number of comments posted to the regulation that is currently at the top of Regulations.gov's "What's Trending" list <br> <a href='http://www.regulations.gov/#!home'>[related URL]</a> |   |
+| 57. <i id='task-57'></i>The top 3 auto manufacturers, ranked by total number of recalls via NHTSA safety-related defect and compliance campaigns since 1967. <br> <a href='http://www-odi.nhtsa.dot.gov/downloads/'>[related URL]</a>&nbsp;<a href='scripts/57.py'>[script]</a> |  24 lines |
 | 58. <i id='task-58'></i>The number of published research papers from the NSA <br> <a href='https://www.nsa.gov/research/publications/index.shtml'>[related URL]</a>&nbsp;<a href='scripts/58.py'>[script]</a> |  6 lines |
 | 59. <i id='task-59'></i>The number of university-related datasets currently listed at data.gov <br> <a href='http://catalog.data.gov/dataset?organization_type=University&sort=metadata_created+desc&q='>[related URL]</a>&nbsp;<a href='scripts/59.py'>[script]</a> |  7 lines |
 | 60. <i id='task-60'></i>Number of chapters in Title 20 (Education) of the United States Code <br> <a href='http://uscode.house.gov/browse/prelim@title20/chapter9&edition=prelim'>[related URL]</a>&nbsp;<a href='scripts/60.py'>[script]</a> |  15 lines |
