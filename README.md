@@ -25,8 +25,7 @@ Note: A lot of the code is not best practice. The tasks are a little repetitive 
 __Note:__ The "__related URL__" links to either the official source of the data, or at least a page with some background information. The second column of this table refers to __line count__ of the script, __not__ the answer to the prompt.
 
 ## The tasks
-
-The repo currently contains scripts for __92__ of __101__ tasks:
+The repo currently contains scripts for __93__ of __101__ tasks:
 
 |          Title          |  Line count |
 |-------------------------|-------------|
@@ -60,7 +59,7 @@ The repo currently contains scripts for __92__ of __101__ tasks:
 | 28. <i id='task-28'></i>Total number of clinical trials as recorded by the National Institutes of Health <br> <a href='https://clinicaltrials.gov/'>[related URL]</a>&nbsp;<a href='scripts/28.py'>[script]</a> |  7 lines |
 | 29. <i id='task-29'></i>Number of days until Texas's next scheduled execution <br> <a href='https://www.tdcj.state.tx.us/death_row/dr_scheduled_executions.html'>[related URL]</a>&nbsp;<a href='scripts/29.py'>[script]</a> |  24 lines |
 | 30. <i id='task-30'></i>The total number of inmates executed by Florida since 1976 <br> <a href='http://www.dc.state.fl.us/oth/deathrow/execlist.html'>[related URL]</a>&nbsp;<a href='scripts/30.py'>[script]</a> |  10 lines |
-| 31. <i id='task-31'></i>The number of proposed U.S. federal regulations in which comments are due within the next 3 days [note: requires the API] <br> <a href='http://www.regulations.gov/#!searchResults;rpp=25;po=0;cs=3;dct=N%252BFR%252BPR'>[related URL]</a> |   |
+| 31. <i id='task-31'></i>The number of proposed U.S. federal regulations in which comments are due within the next 3 days <br> <a href='http://regulationsgov.github.io/developers/console/'>[related URL]</a> |   |
 | 32. <i id='task-32'></i>Number of Titles that have changed int he United States Code since its last release point <br> <a href='http://uscode.house.gov/download/download.shtml'>[related URL]</a>&nbsp;<a href='scripts/32.py'>[script]</a> |  6 lines |
 | 33. <i id='task-33'></i>The number of FDA-approved, but now discontinued drug products that contain Fentanyl as an active ingredient <br> <a href='http://www.accessdata.fda.gov/scripts/cder/ob/docs/tempai.cfm'>[related URL]</a>&nbsp;<a href='scripts/33.py'>[script]</a> |  14 lines |
 | 34. <i id='task-34'></i>In the latest FDA Weekly Enforcement Report, the number of Class I and Class II recalls involving food <br> <a href='http://www.fda.gov/Safety/Recalls/EnforcementReports/default.htm'>[related URL]</a>&nbsp;<a href='scripts/34.py'>[script]</a> |  10 lines |
@@ -86,7 +85,7 @@ The repo currently contains scripts for __92__ of __101__ tasks:
 | 54. <i id='task-54'></i>The number of people on FBI's Most Wanted List for white collar crimes <br> <a href='http://www.fbi.gov/wanted/wcc/@@wanted-group-listing'>[related URL]</a>&nbsp;<a href='scripts/54.py'>[script]</a> |  6 lines |
 | 55. <i id='task-55'></i>The number of Government Accountability Office reports and testimonies on the topic of veterans <br> <a href='http://www.gao.gov/browse/topic/Veterans'>[related URL]</a>&nbsp;<a href='scripts/55.py'>[script]</a> |  10 lines |
 | 56. <i id='task-56'></i>Number of times Rep. Darrell Issa's remarks have made it onto the Congressional Record <br> <a href='https://www.congress.gov/search?q=%7B%22source%22%3A%22congrecord%22%2C%22crHouseMemberRemarks%22%3A%22Issa%2C+Darrell+E.+%5BR-CA%5D%22%7D'>[related URL]</a>&nbsp;<a href='scripts/56.py'>[script]</a> |  9 lines |
-| 57. <i id='task-57'></i>The number of comments posted to the regulation that is currently at the top of Regulations.gov's "What's Trending" list [note: this exercise is horrible and will be replaced in next repo push; don't even try it] <br> <a href='http://www.regulations.gov/#!home'>[related URL]</a> |   |
+| 57. <i id='task-57'></i>The number of comments posted to the regulation that is currently at the top of Regulations.gov's "What's Trending" list <br> <a href='http://www.regulations.gov/#!home'>[related URL]</a> |   |
 | 58. <i id='task-58'></i>The number of published research papers from the NSA <br> <a href='https://www.nsa.gov/research/publications/index.shtml'>[related URL]</a>&nbsp;<a href='scripts/58.py'>[script]</a> |  6 lines |
 | 59. <i id='task-59'></i>The number of university-related datasets currently listed at data.gov <br> <a href='http://catalog.data.gov/dataset?organization_type=University&sort=metadata_created+desc&q='>[related URL]</a>&nbsp;<a href='scripts/59.py'>[script]</a> |  7 lines |
 | 60. <i id='task-60'></i>Number of chapters in Title 20 (Education) of the United States Code <br> <a href='http://uscode.house.gov/browse/prelim@title20/chapter9&edition=prelim'>[related URL]</a>&nbsp;<a href='scripts/60.py'>[script]</a> |  15 lines |
@@ -116,7 +115,7 @@ The repo currently contains scripts for __92__ of __101__ tasks:
 | 84. <i id='task-84'></i>The total number of notices published on the most recent date to the Federal Register <br> <a href='https://www.federalregister.gov/articles/current'>[related URL]</a>&nbsp;<a href='scripts/84.py'>[script]</a> |  6 lines |
 | 85. <i id='task-85'></i>The number of iPhone units sold in the latest quarter, according to Apple Inc's most recent 10-Q report <br> <a href='http://www.sec.gov/Archives/edgar/data/320193/000119312515023697/0001193125-15-023697-index.htm'>[related URL]</a>&nbsp;<a href='scripts/85.py'>[script]</a> |  49 lines |
 | 86. <i id='task-86'></i>Number of computer vulnerabilities in which IBM was the vendor in the latest Cyber Security Bulletin  <br> <a href='https://www.us-cert.gov/ncas/bulletins'>[related URL]</a>&nbsp;<a href='scripts/86.py'>[script]</a> |  10 lines |
-| 87. <i id='task-87'></i>Number of airports with existing construction related activity <br> <a href='https://nfdc.faa.gov/xwiki/bin/view/NFDC/Construction+Notices'>[related URL]</a> |   |
+| 87. <i id='task-87'></i>Number of airports with existing construction related activity <br> <a href='https://nfdc.faa.gov/xwiki/bin/view/NFDC/Construction+Notices'>[related URL]</a>&nbsp;<a href='scripts/87.py'>[script]</a> |  6 lines |
 | 88. <i id='task-88'></i>The number of posts on TSA's Instagram account <br> <a href='https://instagram.com/tsa/'>[related URL]</a>&nbsp;<a href='scripts/88.py'>[script]</a> |  24 lines |
 | 89. <i id='task-89'></i>In fiscal year 2013, the short description of the most frequently cited type of FDA's inspectional observations related to food products. <br> <a href='http://www.fda.gov/ICECI/Inspections/ucm250720.htm'>[related URL]</a> |   |
 | 90. <i id='task-90'></i>The currently serving U.S. congressmember with the most Twitter followers <br> <a href=''>[related URL]</a>&nbsp;<a href='scripts/90.py'>[script]</a> |  76 lines |
@@ -131,7 +130,6 @@ The repo currently contains scripts for __92__ of __101__ tasks:
 | 99. <i id='task-99'></i>According to the Medill National Security Zone, the number of chambered guns confiscated at airports by the TSA <br> <a href='https://docs.google.com/spreadsheet/ccc?key=0AhAxyUlnJGbpdGhPSGhwWUp0QkowdEhXRXFKZE5Fb0E&usp=sharing'>[related URL]</a>&nbsp;<a href='scripts/99.py'>[script]</a> |  11 lines |
 | 100. <i id='task-100'></i>The California city whose city manager earns the most total wage per population of its city in 2012 <br> <a href='http://publicpay.ca.gov/Reports/RawExport.aspx'>[related URL]</a>&nbsp;<a href='scripts/100.py'>[script]</a> |  23 lines |
 | 101. <i id='task-101'></i>The number of women currently serving in the U.S. Congress, according to Sunlight Foundation data <br> <a href='https://sunlightlabs.github.io/congress/#legislator-spreadsheet'>[related URL]</a>&nbsp;<a href='scripts/101.py'>[script]</a> |  8 lines |
-
 
 ----
 
