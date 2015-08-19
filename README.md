@@ -25,9 +25,7 @@ Note: A lot of the code is not best practice. The tasks are a little repetitive 
 __Note:__ The "__related URL__" links to either the official source of the data, or at least a page with some background information. The second column of this table refers to __line count__ of the script, __not__ the answer to the prompt.
 
 ## The tasks
-
-
-The repo currently contains scripts for __95__ of __101__ tasks:
+The repo currently contains scripts for __96__ of __101__ tasks:
 
 |          Title          |  Line count |
 |-------------------------|-------------|
@@ -56,7 +54,7 @@ The repo currently contains scripts for __95__ of __101__ tasks:
 | 23. <i id='task-23'></i>The name of the California school with the highest number of girls enrolled in kindergarten, according to the CA Dept. of Education's latest enrollment data file. <br> <a href='http://www.cde.ca.gov/ds/sd/sd/filesenr.asp'>[related URL]</a>&nbsp;<a href='scripts/23.py'>[script]</a> |  21 lines |
 | 24. <i id='task-24'></i>Percentage of NYPD stop-and-frisk reports in which the suspect was white in 2014 <br> <a href='http://www.nyc.gov/html/nypd/html/analysis_and_planning/stop_question_and_frisk_report.shtml'>[related URL]</a>&nbsp;<a href='scripts/24.py'>[script]</a> |  24 lines |
 | 25. <i id='task-25'></i>Average frontal crash star rating for 2015 Honda Accords <br> <a href='http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/2011-Newer+Vehicles/Search-Results?searchtype=model&make=HONDA&model=ACCORD&year='>[related URL]</a>&nbsp;<a href='scripts/25.py'>[script]</a> |  14 lines |
-| 26. <i id='task-26'></i>The dropout rate for all of Santa Clara County high schools, according to the latest cohort data in CALPADS <br> <a href='http://www.cde.ca.gov/ds/sd/sd/filescohort.asp'>[related URL]</a> |   |
+| 26. <i id='task-26'></i>The dropout rate for all of Santa Clara County high schools, according to the latest cohort data in CALPADS <br> <a href='http://www.cde.ca.gov/ds/sd/sd/filescohort.asp'>[related URL]</a>&nbsp;<a href='scripts/26.py'>[script]</a> |  48 lines |
 | 27. <i id='task-27'></i>The number of Class I Drug Recalls issued by the U.S. Food and Drug Administration since 2012 <br> <a href='http://www.fda.gov/Drugs/DrugSafety/DrugRecalls/default.htm'>[related URL]</a>&nbsp;<a href='scripts/27.py'>[script]</a> |  14 lines |
 | 28. <i id='task-28'></i>Total number of clinical trials as recorded by the National Institutes of Health <br> <a href='https://clinicaltrials.gov/'>[related URL]</a>&nbsp;<a href='scripts/28.py'>[script]</a> |  7 lines |
 | 29. <i id='task-29'></i>Number of days until Texas's next scheduled execution <br> <a href='https://www.tdcj.state.tx.us/death_row/dr_scheduled_executions.html'>[related URL]</a>&nbsp;<a href='scripts/29.py'>[script]</a> |  24 lines |
@@ -132,6 +130,7 @@ The repo currently contains scripts for __95__ of __101__ tasks:
 | 99. <i id='task-99'></i>According to the Medill National Security Zone, the number of chambered guns confiscated at airports by the TSA <br> <a href='https://docs.google.com/spreadsheet/ccc?key=0AhAxyUlnJGbpdGhPSGhwWUp0QkowdEhXRXFKZE5Fb0E&usp=sharing'>[related URL]</a>&nbsp;<a href='scripts/99.py'>[script]</a> |  11 lines |
 | 100. <i id='task-100'></i>The California city whose city manager earns the most total wage per population of its city in 2012 <br> <a href='http://publicpay.ca.gov/Reports/RawExport.aspx'>[related URL]</a>&nbsp;<a href='scripts/100.py'>[script]</a> |  23 lines |
 | 101. <i id='task-101'></i>The number of women currently serving in the U.S. Congress, according to Sunlight Foundation data <br> <a href='https://sunlightlabs.github.io/congress/#legislator-spreadsheet'>[related URL]</a>&nbsp;<a href='scripts/101.py'>[script]</a> |  8 lines |
+
 
 
 ----
