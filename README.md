@@ -25,7 +25,8 @@ Note: A lot of the code is not best practice. The tasks are a little repetitive 
 __Note:__ The "__related URL__" links to either the official source of the data, or at least a page with some background information. The second column of this table refers to __line count__ of the script, __not__ the answer to the prompt.
 
 ## The tasks
-The repo currently contains scripts for __96__ of __101__ tasks:
+
+The repo currently contains scripts for __97__ of __101__ tasks:
 
 |          Title          |  Line count |
 |-------------------------|-------------|
@@ -109,7 +110,7 @@ The repo currently contains scripts for __96__ of __101__ tasks:
 | 78. <i id='task-78'></i>Number of Cupertino, CA restaurants that have been shut down due to health violations in the last six months. <br> <a href='https://services.sccgov.org/facilityinspection/Closure/Index?sortField=sortbyEDate'>[related URL]</a>&nbsp;<a href='scripts/78.py'>[script]</a> |  6 lines |
 | 79. <i id='task-79'></i>The change in total airline revenues from baggage fees, from 2013 to 2014 <br> <a href='http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/subject_areas/airline_information/baggage_fees/index.html'>[related URL]</a>&nbsp;<a href='scripts/79.py'>[script]</a> |  19 lines |
 | 80. <i id='task-80'></i>The total number of babies named Odin born in Colorado according to the Social Security Administration <br> <a href='http://www.ssa.gov/oact/babynames/limits.html'>[related URL]</a>&nbsp;<a href='scripts/80.py'>[script]</a> |  20 lines |
-| 81. <i id='task-81'></i>The latest release date for T-100 Domestic Market (U.S. Carriers) statistics report <br> <a href='http://www.transtats.bts.gov/releaseinfo.asp'>[related URL]</a> |   |
+| 81. <i id='task-81'></i>The latest release date for T-100 Domestic Market (U.S. Carriers) statistics report <br> <a href='http://www.transtats.bts.gov/releaseinfo.asp'>[related URL]</a>&nbsp;<a href='scripts/81.py'>[script]</a> |  13 lines |
 | 82. <i id='task-82'></i>From 2010 to 2013, the total number of patient deaths listed in the FDA's Adverse Events Reporting System <br> <a href='http://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/ucm070461.htm'>[related URL]</a> |   |
 | 83. <i id='task-83'></i>The sum of White House staffermember salaries in 2014 <br> <a href='https://open.whitehouse.gov/Government/2014-Report-to-Congress-on-White-House-Staff/i9g8-9web'>[related URL]</a>&nbsp;<a href='scripts/83.py'>[script]</a> |  12 lines |
 | 84. <i id='task-84'></i>The total number of notices published on the most recent date to the Federal Register <br> <a href='https://www.federalregister.gov/articles/current'>[related URL]</a>&nbsp;<a href='scripts/84.py'>[script]</a> |  6 lines |
@@ -130,6 +131,7 @@ The repo currently contains scripts for __96__ of __101__ tasks:
 | 99. <i id='task-99'></i>According to the Medill National Security Zone, the number of chambered guns confiscated at airports by the TSA <br> <a href='https://docs.google.com/spreadsheet/ccc?key=0AhAxyUlnJGbpdGhPSGhwWUp0QkowdEhXRXFKZE5Fb0E&usp=sharing'>[related URL]</a>&nbsp;<a href='scripts/99.py'>[script]</a> |  11 lines |
 | 100. <i id='task-100'></i>The California city whose city manager earns the most total wage per population of its city in 2012 <br> <a href='http://publicpay.ca.gov/Reports/RawExport.aspx'>[related URL]</a>&nbsp;<a href='scripts/100.py'>[script]</a> |  23 lines |
 | 101. <i id='task-101'></i>The number of women currently serving in the U.S. Congress, according to Sunlight Foundation data <br> <a href='https://sunlightlabs.github.io/congress/#legislator-spreadsheet'>[related URL]</a>&nbsp;<a href='scripts/101.py'>[script]</a> |  8 lines |
+
 
 
 
