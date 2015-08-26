@@ -31,20 +31,44 @@ for row in sorted(rows, key = lambda r: int(r['Problem No.'])):
             done_count += 1
 
     tasks.append(task)
+
+
+
 #############
-# print stuff out
-print("The repo currently contains scripts for __%s__ of __%s__ tasks:" %
+# store the text to be added to file
+tasklines = []
+tasklines.append("The repo currently contains scripts for __%s__ of __%s__ tasks:" %
         (done_count, len(tasks)))
-print(
+tasklines.append(
 """
 |          Title          |  Line count |
 |-------------------------|-------------|""")
 
 for task in tasks:
-    print("| {num}. {link} |  {lines} |".format(**task))
+    tasklines.append("| {num}. {link} |  {lines} |".format(**task))
 
 
 
 
+
+## Get the README.md text
+lines = []
+with open('README.md', 'r') as inf:
+    within_tasks = False
+    for line in inf.readlines():
+        if not within_tasks:
+            if 'begintasks' in line:
+                within_tasks = True
+                lines.append(line)
+                lines.extend([t + "\n" for t in tasklines])
+            else:
+                lines.append(line)
+        elif within_tasks:
+            if 'endtasks' in line:
+                lines.append(line)
+                within_tasks = False
+
+with open('README.md', 'w') as outf:
+    outf.writelines(lines)
 
 
