@@ -27,7 +27,7 @@ with ZipFile(BytesIO(resp.content)) as zfile:
     # the zip contains many files...we want the one labeled REACYYQX.txt
     # e.g. ascii/REAC15Q1.txt
     fname = next(x.filename for x in zfile.filelist if
-                                    "REAC" in x.filename and "txt" in x.filename)
+                                    "REAC" in x.filename and "txt" in x.filename.lower())
     print("Unzipping:", fname)
     data = zfile.read(fname).decode('latin-1').splitlines()
     # The data looks like this:
