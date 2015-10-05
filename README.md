@@ -1,8 +1,8 @@
-## Search-Script-Scrape 
+## Search-Script-Scrape: 101 webscraping and research tasks for the data journalist
 
-This exercise set is part of the [Stanford Computational Journalism Lab](http://cjlab.stanford.edu).
+__Note:__ This exercise set is part of the [Stanford Computational Journalism Lab](http://cjlab.stanford.edu). I [wrote a blog post that gives a little more elaboration about the libraries used and a few of the exercises](http://blog.danwin.com/examples-of-web-scraping-in-python-3-x-for-data-journalists/).
 
-#### 101 webscraping and research tasks for the data journalist
+-------------
 
 This repository contains [101 Web data-collection tasks](#the-tasks) in Python 3 that I assigned to my [Computational Journalism class in Spring 2015](http://www.compjour.org) to give them regular exercise in programming and conducting research, and to expose them to the variety of data published online.
 
