@@ -1,5 +1,7 @@
 ## Search-Script-Scrape 
 
+This exercise set is part of the [Stanford Computational Journalism Lab](http://cjlab.stanford.edu).
+
 #### 101 webscraping and research tasks for the data journalist
 
 This repository contains [101 Web data-collection tasks](#the-tasks) in Python 3 that I assigned to my [Computational Journalism class in Spring 2015](http://www.compjour.org) to give them regular exercise in programming and conducting research, and to expose them to the variety of data published online.
@@ -27,7 +29,7 @@ __Note:__ The "__related URL__" links to either the official source of the data,
 ## The tasks
 
 <!--begintasks-->
-The repo currently contains scripts for __99__ of __101__ tasks:
+The repo currently contains scripts for __100__ of __101__ tasks:
 
 |          Title          |  Line count |
 |-------------------------|-------------|
@@ -41,7 +43,7 @@ The repo currently contains scripts for __99__ of __101__ tasks:
 | 8. <i id='task-8'></i>The number of times when a New York heart surgeon's rate of patient deaths for all cardiac surgical procedures was "significantly higher" than the statewide rate, according to New York state's analysis. <br> <a href='https://health.data.ny.gov/Health/Cardiac-Surgery-by-Surgeon-Beginning-2008/dk4z-k3xb'>[related URL]</a>&nbsp;<a href='scripts/8.py'>[script]</a> |  7 lines |
 | 9. <i id='task-9'></i>The number of roll call votes that were rejected by a margin of less than 5 votes, in the first session of the U.S. Senate in the 114th Congress <br> <a href='http://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_114_1.htm'>[related URL]</a>&nbsp;<a href='scripts/9.py'>[script]</a> |  26 lines |
 | 10. <i id='task-10'></i>The title of the highest paid California city government position in 2010 <br> <a href='http://publicpay.ca.gov/Reports/RawExport.aspx'>[related URL]</a>&nbsp;<a href='scripts/10.py'>[script]</a> |  35 lines |
-| 11. <i id='task-11'></i>How much did the state of California collect in property taxes, according to the U.S. Census 2013 Annual Survey of State Government Tax Collections? <br> <a href='http://www.census.gov/govs/statetax/historical_data.html'>[related URL]</a> |   |
+| 11. <i id='task-11'></i>How much did the state of California collect in property taxes, according to the U.S. Census 2013 Annual Survey of State Government Tax Collections? <br> <a href='http://www.census.gov/govs/statetax/historical_data.html'>[related URL]</a>&nbsp;<a href='scripts/11.py'>[script]</a> |  23 lines |
 | 12. <i id='task-12'></i>In 2010, the year-over-year change in enplanements at America's busiest airport <br> <a href='http://www.faa.gov/airports/planning_capacity/passenger_allcargo_stats/passenger/?year=2010'>[related URL]</a>&nbsp;<a href='scripts/12.py'>[script]</a> |  51 lines |
 | 13. <i id='task-13'></i>The number of armored carrier bank robberies recorded by the FBI in 2014 <br> <a href='http://www.fbi.gov/stats-services/publications/bank-crime-statistics-2014/bank-crime-statistics-2014'>[related URL]</a>&nbsp;<a href='scripts/13.py'>[script]</a> |  15 lines |
 | 14. <i id='task-14'></i>The number of workplace fatalities at reported to the federal and state OSHA in the latest fiscal year <br> <a href='https://www.osha.gov/dep/fatcat/dep_fatcat.html'>[related URL]</a>&nbsp;<a href='scripts/14.py'>[script]</a> |  14 lines |
