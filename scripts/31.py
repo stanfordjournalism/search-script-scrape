@@ -4,7 +4,7 @@
 # This exercise is a major snafu on my part, as I assigned it thinking you
 #   could easily scrape it from the front page.
 #   However, the HTML of the results is generated client side, after an AJAX
-#   request to whatever-the-f-ck this serialzed data format is:
+#   request to whatever-the-f-ck this serialized data format is:
 #   GET http://www.regulations.gov/dispatch/LoadRegulationsClosingSoon
 #   Response:
 #   //OK[21,20,19,3,18,17,16,3,15,14,13,3,12,11,10,3,9,8,7,3,6,5,4,3,6,2,1,["gov.egov.erule.regs.shared.dispatch.LoadRegulationsClosingSoonResult/4107109627","java.util.ArrayList/4159755760","gov.regulations.common.models.DimensionValueModel/244318028","41","Today","8075","83","3 Days","8096","194","7 Days","8076","436","15 Days","8097","766","30 Days","8077","1133","90 Days","8078"],0,7]
